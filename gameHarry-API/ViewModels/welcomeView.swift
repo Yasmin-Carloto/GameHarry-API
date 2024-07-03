@@ -1,2 +1,0 @@
-//welcomePage view
-import Foundation
