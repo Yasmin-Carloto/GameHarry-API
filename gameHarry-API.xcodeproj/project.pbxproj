@@ -14,6 +14,7 @@
 		B214AD062C35740300A362EB /* gameHarry_APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD052C35740300A362EB /* gameHarry_APITests.swift */; };
 		B214AD102C35740300A362EB /* gameHarry_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD0F2C35740300A362EB /* gameHarry_APIUITests.swift */; };
 		B214AD122C35740300A362EB /* gameHarry_APIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD112C35740300A362EB /* gameHarry_APIUITestsLaunchTests.swift */; };
+		B214AD202C357BE700A362EB /* apiservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD1F2C357BE700A362EB /* apiservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B214AD0B2C35740300A362EB /* gameHarry-APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gameHarry-APIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B214AD0F2C35740300A362EB /* gameHarry_APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameHarry_APIUITests.swift; sourceTree = "<group>"; };
 		B214AD112C35740300A362EB /* gameHarry_APIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameHarry_APIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B214AD1F2C357BE700A362EB /* apiservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		B214ACE82C35740100A362EB = {
 			isa = PBXGroup;
 			children = (
+				B214AD1E2C357BD800A362EB /* APIServices */,
 				B214ACF32C35740100A362EB /* gameHarry-API */,
 				B214AD042C35740300A362EB /* gameHarry-APITests */,
 				B214AD0E2C35740300A362EB /* gameHarry-APIUITests */,
@@ -125,6 +128,14 @@
 				B214AD112C35740300A362EB /* gameHarry_APIUITestsLaunchTests.swift */,
 			);
 			path = "gameHarry-APIUITests";
+			sourceTree = "<group>";
+		};
+		B214AD1E2C357BD800A362EB /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				B214AD1F2C357BE700A362EB /* apiservice.swift */,
+			);
+			path = APIServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			files = (
 				B214ACF72C35740100A362EB /* ContentView.swift in Sources */,
 				B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */,
+				B214AD202C357BE700A362EB /* apiservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
