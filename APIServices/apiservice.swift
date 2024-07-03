@@ -6,7 +6,7 @@ class ApiServices{
     private init(){}
     
     //selHousesClosure
-    func selHouses(code: String, completion: @escaping (_data: Data?) -> Void){
+    /*func selHouses(code: String, completion: @escaping (_data: Data?) -> Void){
     //code
-    }
+    } */
 }

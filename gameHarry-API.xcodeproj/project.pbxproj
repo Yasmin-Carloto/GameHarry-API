@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */; };
-		B214ACF72C35740100A362EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214ACF62C35740100A362EB /* ContentView.swift */; };
 		B214ACF92C35740200A362EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B214ACF82C35740200A362EB /* Assets.xcassets */; };
 		B214ACFC2C35740200A362EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B214ACFB2C35740200A362EB /* Preview Assets.xcassets */; };
 		B214AD062C35740300A362EB /* gameHarry_APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD052C35740300A362EB /* gameHarry_APITests.swift */; };
 		B214AD102C35740300A362EB /* gameHarry_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD0F2C35740300A362EB /* gameHarry_APIUITests.swift */; };
 		B214AD122C35740300A362EB /* gameHarry_APIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD112C35740300A362EB /* gameHarry_APIUITestsLaunchTests.swift */; };
 		B214AD202C357BE700A362EB /* apiservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD1F2C357BE700A362EB /* apiservice.swift */; };
+		B214AD302C35903800A362EB /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD2F2C35903800A362EB /* WelcomePage.swift */; };
+		B214AD322C3590A300A362EB /* welcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD312C3590A300A362EB /* welcomeView.swift */; };
+		B214AD342C35931300A362EB /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD332C35931300A362EB /* SettingsPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		B214ACF12C35740100A362EB /* gameHarry-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gameHarry-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameHarry_APIApp.swift; sourceTree = "<group>"; };
-		B214ACF62C35740100A362EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B214ACF82C35740200A362EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B214ACFB2C35740200A362EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B214AD012C35740300A362EB /* gameHarry-APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gameHarry-APITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +47,9 @@
 		B214AD0F2C35740300A362EB /* gameHarry_APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameHarry_APIUITests.swift; sourceTree = "<group>"; };
 		B214AD112C35740300A362EB /* gameHarry_APIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameHarry_APIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B214AD1F2C357BE700A362EB /* apiservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiservice.swift; sourceTree = "<group>"; };
+		B214AD2F2C35903800A362EB /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
+		B214AD312C3590A300A362EB /* welcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeView.swift; sourceTree = "<group>"; };
+		B214AD332C35931300A362EB /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,8 @@
 		B214ACF32C35740100A362EB /* gameHarry-API */ = {
 			isa = PBXGroup;
 			children = (
-				B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */,
-				B214ACF62C35740100A362EB /* ContentView.swift */,
+				B214AD2E2C35901F00A362EB /* ViewModels */,
+				B214AD2D2C35901B00A362EB /* Views */,
 				B214ACF82C35740200A362EB /* Assets.xcassets */,
 				B214ACFA2C35740200A362EB /* Preview Content */,
 			);
@@ -136,6 +140,24 @@
 				B214AD1F2C357BE700A362EB /* apiservice.swift */,
 			);
 			path = APIServices;
+			sourceTree = "<group>";
+		};
+		B214AD2D2C35901B00A362EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B214AD2F2C35903800A362EB /* WelcomePage.swift */,
+				B214AD332C35931300A362EB /* SettingsPage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B214AD2E2C35901F00A362EB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */,
+				B214AD312C3590A300A362EB /* welcomeView.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B214ACF72C35740100A362EB /* ContentView.swift in Sources */,
+				B214AD322C3590A300A362EB /* welcomeView.swift in Sources */,
+				B214AD302C35903800A362EB /* WelcomePage.swift in Sources */,
 				B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */,
 				B214AD202C357BE700A362EB /* apiservice.swift in Sources */,
+				B214AD342C35931300A362EB /* SettingsPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
