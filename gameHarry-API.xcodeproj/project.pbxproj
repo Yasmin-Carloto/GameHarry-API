@@ -13,11 +13,12 @@
 		B214AD062C35740300A362EB /* gameHarry_APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD052C35740300A362EB /* gameHarry_APITests.swift */; };
 		B214AD102C35740300A362EB /* gameHarry_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD0F2C35740300A362EB /* gameHarry_APIUITests.swift */; };
 		B214AD122C35740300A362EB /* gameHarry_APIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD112C35740300A362EB /* gameHarry_APIUITestsLaunchTests.swift */; };
-		B214AD202C357BE700A362EB /* apiservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD1F2C357BE700A362EB /* apiservice.swift */; };
+		B214AD202C357BE700A362EB /* Apiservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD1F2C357BE700A362EB /* Apiservice.swift */; };
 		B214AD302C35903800A362EB /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD2F2C35903800A362EB /* WelcomePage.swift */; };
 		B214AD342C35931300A362EB /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD332C35931300A362EB /* SettingsPage.swift */; };
-		B214AD362C35987A00A362EB /* settingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD352C35987A00A362EB /* settingsView.swift */; };
 		CEC321592C36CFFB00941979 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC321582C36CFFB00941979 /* LandingPage.swift */; };
+		CEE89F622C36E603005615B6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89F612C36E603005615B6 /* String+Extension.swift */; };
+		CEE89F652C36E6C1005615B6 /* HouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89F642C36E6C1005615B6 /* HouseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,11 +48,12 @@
 		B214AD0B2C35740300A362EB /* gameHarry-APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gameHarry-APIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B214AD0F2C35740300A362EB /* gameHarry_APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameHarry_APIUITests.swift; sourceTree = "<group>"; };
 		B214AD112C35740300A362EB /* gameHarry_APIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameHarry_APIUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B214AD1F2C357BE700A362EB /* apiservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiservice.swift; sourceTree = "<group>"; };
+		B214AD1F2C357BE700A362EB /* Apiservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apiservice.swift; sourceTree = "<group>"; };
 		B214AD2F2C35903800A362EB /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 		B214AD332C35931300A362EB /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
-		B214AD352C35987A00A362EB /* settingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsView.swift; sourceTree = "<group>"; };
 		CEC321582C36CFFB00941979 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		CEE89F612C36E603005615B6 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		CEE89F642C36E6C1005615B6 /* HouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +84,9 @@
 		B214ACE82C35740100A362EB = {
 			isa = PBXGroup;
 			children = (
-				B214AD1E2C357BD800A362EB /* APIServices */,
 				B214ACF32C35740100A362EB /* gameHarry-API */,
+				B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */,
+				B214ACFA2C35740200A362EB /* Preview Content */,
 				B214AD042C35740300A362EB /* gameHarry-APITests */,
 				B214AD0E2C35740300A362EB /* gameHarry-APIUITests */,
 				B214ACF22C35740100A362EB /* Products */,
@@ -103,10 +106,12 @@
 		B214ACF32C35740100A362EB /* gameHarry-API */ = {
 			isa = PBXGroup;
 			children = (
-				B214AD2E2C35901F00A362EB /* ViewModels */,
+				CEC3215A2C36D79200941979 /* Resources */,
+				CEE89F5B2C36E4F4005615B6 /* Utils */,
+				CEE89F662C36E714005615B6 /* Services */,
+				CEE89F632C36E6AF005615B6 /* Models */,
 				B214AD2D2C35901B00A362EB /* Views */,
-				B214ACF82C35740200A362EB /* Assets.xcassets */,
-				B214ACFA2C35740200A362EB /* Preview Content */,
+				B214AD2E2C35901F00A362EB /* ViewModels */,
 			);
 			path = "gameHarry-API";
 			sourceTree = "<group>";
@@ -136,18 +141,18 @@
 			path = "gameHarry-APIUITests";
 			sourceTree = "<group>";
 		};
-		B214AD1E2C357BD800A362EB /* APIServices */ = {
+		B214AD1E2C357BD800A362EB /* API */ = {
 			isa = PBXGroup;
 			children = (
-				B214AD1F2C357BE700A362EB /* apiservice.swift */,
+				B214AD1F2C357BE700A362EB /* Apiservice.swift */,
 			);
-			path = APIServices;
+			path = API;
 			sourceTree = "<group>";
 		};
 		B214AD2D2C35901B00A362EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B214AD2F2C35903800A362EB /* WelcomePage.swift */,
+				CEE89F5F2C36E5A4005615B6 /* WelcomePage */,
 				B214AD332C35931300A362EB /* SettingsPage.swift */,
 				CEC321582C36CFFB00941979 /* LandingPage.swift */,
 			);
@@ -157,10 +162,88 @@
 		B214AD2E2C35901F00A362EB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */,
-				B214AD352C35987A00A362EB /* settingsView.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEC3215A2C36D79200941979 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEC3215B2C36D7B400941979 /* fonts */,
+				B214ACF82C35740200A362EB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEC3215B2C36D7B400941979 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		CEE89F5B2C36E4F4005615B6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CEE89F5E2C36E51E005615B6 /* Styles */,
+				CEE89F5D2C36E50E005615B6 /* GeneralComponents */,
+				CEE89F5C2C36E4FC005615B6 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CEE89F5C2C36E4FC005615B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEE89F612C36E603005615B6 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEE89F5D2C36E50E005615B6 /* GeneralComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GeneralComponents;
+			sourceTree = "<group>";
+		};
+		CEE89F5E2C36E51E005615B6 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		CEE89F5F2C36E5A4005615B6 /* WelcomePage */ = {
+			isa = PBXGroup;
+			children = (
+				B214AD2F2C35903800A362EB /* WelcomePage.swift */,
+				CEE89F602C36E5AE005615B6 /* Components */,
+			);
+			path = WelcomePage;
+			sourceTree = "<group>";
+		};
+		CEE89F602C36E5AE005615B6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CEE89F632C36E6AF005615B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEE89F642C36E6C1005615B6 /* HouseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEE89F662C36E714005615B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B214AD1E2C357BD800A362EB /* API */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,11 +376,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B214AD362C35987A00A362EB /* settingsView.swift in Sources */,
+				CEE89F622C36E603005615B6 /* String+Extension.swift in Sources */,
 				B214AD302C35903800A362EB /* WelcomePage.swift in Sources */,
 				CEC321592C36CFFB00941979 /* LandingPage.swift in Sources */,
 				B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */,
-				B214AD202C357BE700A362EB /* apiservice.swift in Sources */,
+				B214AD202C357BE700A362EB /* Apiservice.swift in Sources */,
+				CEE89F652C36E6C1005615B6 /* HouseModel.swift in Sources */,
 				B214AD342C35931300A362EB /* SettingsPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
