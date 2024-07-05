@@ -8,38 +8,51 @@
 import SwiftUI
 
 struct LandingPage: View {
+    private let endpoints: [WizardWorldEndpoint] = WizardWorldEndpoint.allCases
+    
     
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
-                HStack(spacing: 30.0, content: {
-                    Spacer()
-                    ForEach(1...3, id: \.self) { count in
-                        VStack {
-                            RoundedRectangle(cornerRadius: 12.0)
-                                .frame(width: 80, height: 80)
-                            Text("Feitiços").font(.lora(.regular))
-                            
-                                
-                        }
+                HStack(spacing: 20.0) {
+                    ForEach(endpoints, id: \.self) { endpoint in
+                        NavigationLink(endpoint.path.capitalized(with: .autoupdatingCurrent),
+                                       destination: WikiPageFactory.createWikiPage(for: endpoint))
                     }
-                    Spacer()
-                })
-                Spacer()
-                Text("Seu ano em hogwarts")
-                    .font(.cinzelDecorative(.bold))
-                RoundedRectangle(cornerRadius: 12.0)
-                Spacer()
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Começar")
-                        
-                })
+                }
             }
-            .padding()
-            .paperTexture()
-            .navigationTitle("Welcome to Hogwarts !")
-            .navigationBarTitleDisplayMode(.large)
             
+            Text("Seu ano em hogwarts")
+                .font(.cinzelDecorative(.bold))
+            RoundedRectangle(cornerRadius: 12.0)
+            Spacer()
+            Button(action: {
+                //
+            }, label: {
+                Text("Começar")
+                    .padding()
+                
+            })
+        }
+        .padding()
+        .paperTexture()
+        .navigationTitle("Welcome to Hogwarts !")
+        .navigationBarTitleDisplayMode(.large)
+    }
+}
+
+class WikiPageFactory {
+    static func createWikiPage(for endpoint: WizardWorldEndpoint) -> some View {
+        switch endpoint {
+        case .houses:
+            return AnyView(WikiPage<House>(endpoint: endpoint))
+        case .potions:
+            return AnyView(WikiPage<Potion>(endpoint: endpoint))
+        case .spells:
+            return AnyView(WikiPage<Spell>(endpoint: endpoint))
+        case .wizards:
+            return AnyView(WikiPage<Wizard>(endpoint: endpoint))
+
         }
     }
 }

@@ -16,6 +16,8 @@
 		B214AD202C357BE700A362EB /* Apiservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD1F2C357BE700A362EB /* Apiservice.swift */; };
 		B214AD302C35903800A362EB /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD2F2C35903800A362EB /* WelcomePage.swift */; };
 		B214AD342C35931300A362EB /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD332C35931300A362EB /* SettingsPage.swift */; };
+		CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */; };
+		CE3228082C382DA800F3E8D8 /* WikiPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3228072C382DA800F3E8D8 /* WikiPage.swift */; };
 		CEC321592C36CFFB00941979 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC321582C36CFFB00941979 /* LandingPage.swift */; };
 		CEE89F622C36E603005615B6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89F612C36E603005615B6 /* String+Extension.swift */; };
 		CEE89F652C36E6C1005615B6 /* HouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89F642C36E6C1005615B6 /* HouseModel.swift */; };
@@ -59,6 +61,8 @@
 		B214AD1F2C357BE700A362EB /* Apiservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apiservice.swift; sourceTree = "<group>"; };
 		B214AD2F2C35903800A362EB /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 		B214AD332C35931300A362EB /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+		CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewmodel.swift; sourceTree = "<group>"; };
+		CE3228072C382DA800F3E8D8 /* WikiPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiPage.swift; sourceTree = "<group>"; };
 		CEC321582C36CFFB00941979 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		CEE89F612C36E603005615B6 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		CEE89F642C36E6C1005615B6 /* HouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseModel.swift; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 		B214AD2D2C35901B00A362EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE3228062C382D9100F3E8D8 /* WikiPage */,
 				CEE89F5F2C36E5A4005615B6 /* WelcomePage */,
 				B214AD332C35931300A362EB /* SettingsPage.swift */,
 				CEE89F672C36F550005615B6 /* LandingPage */,
@@ -180,8 +185,25 @@
 		B214AD2E2C35901F00A362EB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE3228062C382D9100F3E8D8 /* WikiPage */ = {
+			isa = PBXGroup;
+			children = (
+				CE3228072C382DA800F3E8D8 /* WikiPage.swift */,
+				CE3228092C383A0400F3E8D8 /* Components */,
+			);
+			path = WikiPage;
+			sourceTree = "<group>";
+		};
+		CE3228092C383A0400F3E8D8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		CEC3215A2C36D79200941979 /* Resources */ = {
@@ -426,6 +448,7 @@
 			files = (
 				CEE89F622C36E603005615B6 /* String+Extension.swift in Sources */,
 				B214AD302C35903800A362EB /* WelcomePage.swift in Sources */,
+				CE3228082C382DA800F3E8D8 /* WikiPage.swift in Sources */,
 				CEC321592C36CFFB00941979 /* LandingPage.swift in Sources */,
 				B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */,
 				CEE89F6A2C36F62F005615B6 /* View+Extension.swift in Sources */,
@@ -433,6 +456,7 @@
 				B214AD202C357BE700A362EB /* Apiservice.swift in Sources */,
 				CEE89F652C36E6C1005615B6 /* HouseModel.swift in Sources */,
 				B214AD342C35931300A362EB /* SettingsPage.swift in Sources */,
+				CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

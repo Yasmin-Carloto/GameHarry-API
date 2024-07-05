@@ -50,4 +50,6 @@ extension Font {
         fontName.append(type.value)
         return Font.custom(fontName, size: size)
     }
+    
 }
+
