@@ -9,13 +9,34 @@ import SwiftUI
 
 extension Font {
     enum Lora {
+        case bold
+        case boldItalic
+        case italic
+        case medium
+        case mediumItalic
         case regular
+        case semibold
+        case semiBoldItalic
         
         var value: String {
             switch self {
                 
+            case .bold:
+                return "Bold"
+            case .italic:
+                return "Italic"
+            case .medium:
+                return "Medium"
             case .regular:
-                return "VariableFont_wght"
+                return "Regular"
+            case .semibold:
+                return "SemiBold"
+            case .boldItalic:
+                return "SemiBoldItalic"
+            case .mediumItalic:
+                return "MediumItalic"
+            case .semiBoldItalic:
+                return "BoldItalic"
             }
         }
     }

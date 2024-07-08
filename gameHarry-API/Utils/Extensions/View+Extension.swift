@@ -21,10 +21,12 @@ struct paperbackground: ViewModifier {
     func body(content: Content) -> some View {
         content
             .background {
+                Rectangle()
+                    .fill(.sunset)
+                    .ignoresSafeArea()
                 Image("paper-texture")
                     .resizable()
                     .scaledToFill()
-                    .colorMultiply(Color.sunset)
                     .ignoresSafeArea()
             }
     }

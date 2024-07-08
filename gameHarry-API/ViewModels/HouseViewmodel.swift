@@ -5,8 +5,6 @@
 //  Created by User on 05/07/24.
 //
 
-import Foundation
-
 class HousesViewModel {
     
     var isLoading: Bool = false

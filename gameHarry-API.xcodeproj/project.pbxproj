@@ -18,17 +18,28 @@
 		B214AD342C35931300A362EB /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD332C35931300A362EB /* SettingsPage.swift */; };
 		CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */; };
 		CE3228082C382DA800F3E8D8 /* WikiPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3228072C382DA800F3E8D8 /* WikiPage.swift */; };
+		CE32280C2C3C099D00F3E8D8 /* WikiPageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32280B2C3C099D00F3E8D8 /* WikiPageFactory.swift */; };
+		CE32280E2C3C0A7400F3E8D8 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32280D2C3C0A7400F3E8D8 /* PrimaryButton.swift */; };
+		CE853AFB2C3C1AFA008CF20B /* TextShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE853AFA2C3C1AFA008CF20B /* TextShimmer.swift */; };
+		CE853AFD2C3C1BD2008CF20B /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE853AFC2C3C1BD2008CF20B /* RoundedImage.swift */; };
+		CE853AFF2C3C1C0B008CF20B /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE853AFE2C3C1C0B008CF20B /* Text+Extension.swift */; };
+		CE853B372C3C1EBE008CF20B /* Cinzel-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B362C3C1EBE008CF20B /* Cinzel-VariableFont_wght.ttf */; };
+		CE853B3B2C3C1ED9008CF20B /* CinzelDecorative-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B382C3C1ED9008CF20B /* CinzelDecorative-Regular.ttf */; };
+		CE853B3C2C3C1ED9008CF20B /* CinzelDecorative-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B392C3C1ED9008CF20B /* CinzelDecorative-Black.ttf */; };
+		CE853B3D2C3C1ED9008CF20B /* CinzelDecorative-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B3A2C3C1ED9008CF20B /* CinzelDecorative-Bold.ttf */; };
+		CE853B462C3C2301008CF20B /* Lora-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B442C3C1F3E008CF20B /* Lora-BoldItalic.ttf */; };
+		CE853B472C3C2301008CF20B /* Lora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B402C3C1F3E008CF20B /* Lora-Regular.ttf */; };
+		CE853B482C3C2301008CF20B /* Lora-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B3E2C3C1F3D008CF20B /* Lora-Bold.ttf */; };
+		CE853B492C3C2301008CF20B /* Lora-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B452C3C1F3E008CF20B /* Lora-SemiBoldItalic.ttf */; };
+		CE853B4A2C3C2301008CF20B /* Lora-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B412C3C1F3E008CF20B /* Lora-Medium.ttf */; };
+		CE853B4B2C3C2301008CF20B /* Lora-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B422C3C1F3E008CF20B /* Lora-Italic.ttf */; };
+		CE853B4C2C3C2301008CF20B /* Lora-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B432C3C1F3E008CF20B /* Lora-MediumItalic.ttf */; };
+		CE853B4D2C3C2301008CF20B /* Lora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B3F2C3C1F3E008CF20B /* Lora-SemiBold.ttf */; };
 		CEC321592C36CFFB00941979 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC321582C36CFFB00941979 /* LandingPage.swift */; };
 		CEE89F622C36E603005615B6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89F612C36E603005615B6 /* String+Extension.swift */; };
 		CEE89F652C36E6C1005615B6 /* HouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89F642C36E6C1005615B6 /* HouseModel.swift */; };
 		CEE89F6A2C36F62F005615B6 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89F692C36F62F005615B6 /* View+Extension.swift */; };
-		CEE89F712C36FB56005615B6 /* Cinzel-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEE89F6D2C36FB56005615B6 /* Cinzel-VariableFont_wght.ttf */; };
-		CEE89F722C36FB56005615B6 /* CinzelDecorative-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEE89F6E2C36FB56005615B6 /* CinzelDecorative-Regular.ttf */; };
-		CEE89F732C36FB56005615B6 /* CinzelDecorative-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEE89F6F2C36FB56005615B6 /* CinzelDecorative-Bold.ttf */; };
-		CEE89F742C36FB56005615B6 /* CinzelDecorative-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEE89F702C36FB56005615B6 /* CinzelDecorative-Black.ttf */; };
 		CEE89F782C36FBE6005615B6 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89F772C36FBE6005615B6 /* Font+Extension.swift */; };
-		CEE89F7B2C36FFA7005615B6 /* Lora-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEE89F7A2C36FFA7005615B6 /* Lora-VariableFont_wght.ttf */; };
-		CEE89F7D2C36FFB7005615B6 /* Lora-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEE89F7C2C36FFB7005615B6 /* Lora-Italic-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,18 +74,29 @@
 		B214AD332C35931300A362EB /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 		CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewmodel.swift; sourceTree = "<group>"; };
 		CE3228072C382DA800F3E8D8 /* WikiPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiPage.swift; sourceTree = "<group>"; };
+		CE32280B2C3C099D00F3E8D8 /* WikiPageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiPageFactory.swift; sourceTree = "<group>"; };
+		CE32280D2C3C0A7400F3E8D8 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		CE853AFA2C3C1AFA008CF20B /* TextShimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextShimmer.swift; sourceTree = "<group>"; };
+		CE853AFC2C3C1BD2008CF20B /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		CE853AFE2C3C1C0B008CF20B /* Text+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
+		CE853B362C3C1EBE008CF20B /* Cinzel-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cinzel-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		CE853B382C3C1ED9008CF20B /* CinzelDecorative-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Regular.ttf"; sourceTree = "<group>"; };
+		CE853B392C3C1ED9008CF20B /* CinzelDecorative-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Black.ttf"; sourceTree = "<group>"; };
+		CE853B3A2C3C1ED9008CF20B /* CinzelDecorative-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Bold.ttf"; sourceTree = "<group>"; };
+		CE853B3E2C3C1F3D008CF20B /* Lora-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Bold.ttf"; sourceTree = "<group>"; };
+		CE853B3F2C3C1F3E008CF20B /* Lora-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-SemiBold.ttf"; sourceTree = "<group>"; };
+		CE853B402C3C1F3E008CF20B /* Lora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Regular.ttf"; sourceTree = "<group>"; };
+		CE853B412C3C1F3E008CF20B /* Lora-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Medium.ttf"; sourceTree = "<group>"; };
+		CE853B422C3C1F3E008CF20B /* Lora-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Italic.ttf"; sourceTree = "<group>"; };
+		CE853B432C3C1F3E008CF20B /* Lora-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-MediumItalic.ttf"; sourceTree = "<group>"; };
+		CE853B442C3C1F3E008CF20B /* Lora-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CE853B452C3C1F3E008CF20B /* Lora-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		CEC321582C36CFFB00941979 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		CEE89F612C36E603005615B6 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		CEE89F642C36E6C1005615B6 /* HouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseModel.swift; sourceTree = "<group>"; };
 		CEE89F692C36F62F005615B6 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
-		CEE89F6D2C36FB56005615B6 /* Cinzel-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cinzel-VariableFont_wght.ttf"; path = "../../../../../../Downloads/Cinzel,Cinzel_Decorative/Cinzel/Cinzel-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		CEE89F6E2C36FB56005615B6 /* CinzelDecorative-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CinzelDecorative-Regular.ttf"; path = "../../../../../../Downloads/Cinzel,Cinzel_Decorative/Cinzel_Decorative/CinzelDecorative-Regular.ttf"; sourceTree = "<group>"; };
-		CEE89F6F2C36FB56005615B6 /* CinzelDecorative-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CinzelDecorative-Bold.ttf"; path = "../../../../../../Downloads/Cinzel,Cinzel_Decorative/Cinzel_Decorative/CinzelDecorative-Bold.ttf"; sourceTree = "<group>"; };
-		CEE89F702C36FB56005615B6 /* CinzelDecorative-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CinzelDecorative-Black.ttf"; path = "../../../../../../Downloads/Cinzel,Cinzel_Decorative/Cinzel_Decorative/CinzelDecorative-Black.ttf"; sourceTree = "<group>"; };
 		CEE89F772C36FBE6005615B6 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		CEE89F792C36FE87005615B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		CEE89F7A2C36FFA7005615B6 /* Lora-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lora-VariableFont_wght.ttf"; path = "../../../../../../Downloads/Lora/Lora-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		CEE89F7C2C36FFB7005615B6 /* Lora-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lora-Italic-VariableFont_wght.ttf"; path = "../../../../../../Downloads/Lora/Lora-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +228,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		CE32280A2C3C098A00F3E8D8 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				CE32280B2C3C099D00F3E8D8 /* WikiPageFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		CEC3215A2C36D79200941979 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,12 +248,18 @@
 		CEC3215B2C36D7B400941979 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				CEE89F7C2C36FFB7005615B6 /* Lora-Italic-VariableFont_wght.ttf */,
-				CEE89F7A2C36FFA7005615B6 /* Lora-VariableFont_wght.ttf */,
-				CEE89F6D2C36FB56005615B6 /* Cinzel-VariableFont_wght.ttf */,
-				CEE89F702C36FB56005615B6 /* CinzelDecorative-Black.ttf */,
-				CEE89F6F2C36FB56005615B6 /* CinzelDecorative-Bold.ttf */,
-				CEE89F6E2C36FB56005615B6 /* CinzelDecorative-Regular.ttf */,
+				CE853B3E2C3C1F3D008CF20B /* Lora-Bold.ttf */,
+				CE853B442C3C1F3E008CF20B /* Lora-BoldItalic.ttf */,
+				CE853B422C3C1F3E008CF20B /* Lora-Italic.ttf */,
+				CE853B412C3C1F3E008CF20B /* Lora-Medium.ttf */,
+				CE853B432C3C1F3E008CF20B /* Lora-MediumItalic.ttf */,
+				CE853B402C3C1F3E008CF20B /* Lora-Regular.ttf */,
+				CE853B3F2C3C1F3E008CF20B /* Lora-SemiBold.ttf */,
+				CE853B452C3C1F3E008CF20B /* Lora-SemiBoldItalic.ttf */,
+				CE853B392C3C1ED9008CF20B /* CinzelDecorative-Black.ttf */,
+				CE853B3A2C3C1ED9008CF20B /* CinzelDecorative-Bold.ttf */,
+				CE853B382C3C1ED9008CF20B /* CinzelDecorative-Regular.ttf */,
+				CE853B362C3C1EBE008CF20B /* Cinzel-VariableFont_wght.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -231,6 +267,7 @@
 		CEE89F5B2C36E4F4005615B6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CE32280A2C3C098A00F3E8D8 /* Factory */,
 				CEE89F5E2C36E51E005615B6 /* Styles */,
 				CEE89F5D2C36E50E005615B6 /* GeneralComponents */,
 				CEE89F5C2C36E4FC005615B6 /* Extensions */,
@@ -241,6 +278,7 @@
 		CEE89F5C2C36E4FC005615B6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CE853AFE2C3C1C0B008CF20B /* Text+Extension.swift */,
 				CEE89F692C36F62F005615B6 /* View+Extension.swift */,
 				CEE89F612C36E603005615B6 /* String+Extension.swift */,
 				CEE89F772C36FBE6005615B6 /* Font+Extension.swift */,
@@ -258,6 +296,7 @@
 		CEE89F5E2C36E51E005615B6 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				CE32280D2C3C0A7400F3E8D8 /* PrimaryButton.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -306,6 +345,8 @@
 		CEE89F682C36F55B005615B6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CE853AFA2C3C1AFA008CF20B /* TextShimmer.swift */,
+				CE853AFC2C3C1BD2008CF20B /* RoundedImage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -414,13 +455,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEE89F732C36FB56005615B6 /* CinzelDecorative-Bold.ttf in Resources */,
-				CEE89F742C36FB56005615B6 /* CinzelDecorative-Black.ttf in Resources */,
-				CEE89F7B2C36FFA7005615B6 /* Lora-VariableFont_wght.ttf in Resources */,
-				CEE89F7D2C36FFB7005615B6 /* Lora-Italic-VariableFont_wght.ttf in Resources */,
-				CEE89F712C36FB56005615B6 /* Cinzel-VariableFont_wght.ttf in Resources */,
+				CE853B3D2C3C1ED9008CF20B /* CinzelDecorative-Bold.ttf in Resources */,
+				CE853B462C3C2301008CF20B /* Lora-BoldItalic.ttf in Resources */,
+				CE853B472C3C2301008CF20B /* Lora-Regular.ttf in Resources */,
+				CE853B482C3C2301008CF20B /* Lora-Bold.ttf in Resources */,
+				CE853B492C3C2301008CF20B /* Lora-SemiBoldItalic.ttf in Resources */,
+				CE853B4A2C3C2301008CF20B /* Lora-Medium.ttf in Resources */,
+				CE853B4B2C3C2301008CF20B /* Lora-Italic.ttf in Resources */,
+				CE853B4C2C3C2301008CF20B /* Lora-MediumItalic.ttf in Resources */,
+				CE853B4D2C3C2301008CF20B /* Lora-SemiBold.ttf in Resources */,
+				CE853B372C3C1EBE008CF20B /* Cinzel-VariableFont_wght.ttf in Resources */,
 				B214ACFC2C35740200A362EB /* Preview Assets.xcassets in Resources */,
-				CEE89F722C36FB56005615B6 /* CinzelDecorative-Regular.ttf in Resources */,
+				CE853B3C2C3C1ED9008CF20B /* CinzelDecorative-Black.ttf in Resources */,
+				CE853B3B2C3C1ED9008CF20B /* CinzelDecorative-Regular.ttf in Resources */,
 				B214ACF92C35740200A362EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,10 +498,15 @@
 				CE3228082C382DA800F3E8D8 /* WikiPage.swift in Sources */,
 				CEC321592C36CFFB00941979 /* LandingPage.swift in Sources */,
 				B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */,
+				CE32280E2C3C0A7400F3E8D8 /* PrimaryButton.swift in Sources */,
+				CE853AFB2C3C1AFA008CF20B /* TextShimmer.swift in Sources */,
+				CE32280C2C3C099D00F3E8D8 /* WikiPageFactory.swift in Sources */,
 				CEE89F6A2C36F62F005615B6 /* View+Extension.swift in Sources */,
 				CEE89F782C36FBE6005615B6 /* Font+Extension.swift in Sources */,
 				B214AD202C357BE700A362EB /* Apiservice.swift in Sources */,
 				CEE89F652C36E6C1005615B6 /* HouseModel.swift in Sources */,
+				CE853AFF2C3C1C0B008CF20B /* Text+Extension.swift in Sources */,
+				CE853AFD2C3C1BD2008CF20B /* RoundedImage.swift in Sources */,
 				B214AD342C35931300A362EB /* SettingsPage.swift in Sources */,
 				CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */,
 			);
