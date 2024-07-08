@@ -1,18 +1,22 @@
-//
-//  WikiPage.swift
-//  gameHarry-API
-//
-//  Created by User on 05/07/24.
-//
+//TODO: chamar ViewModel
 
 import SwiftUI
 
 struct WikiPage<T: Decodable & Identifiable>: View {
+    
     var endpoint: Endpoint
     @State private var items:[T] = []
+    @State private var searchItem: String = ""
     
     var body: some View {
+        //SearchBar
+        //SearchBar(text: <#T##Binding<String>#>, placeholder: <#T##String#>)
+        
+        //ScrollView + LazyVGrid?
         NavigationStack {
+            ScrollView{
+                
+            }
             List(items) { item in
                 Text(String(describing: item))
             }
@@ -25,6 +29,7 @@ struct WikiPage<T: Decodable & Identifiable>: View {
                 print("Error fetching data")
             }
         }
+        .navigationTitle("") //deve ser definido a partir do endpoint
     }
     private func fetchData() async throws {
         do {
@@ -35,8 +40,11 @@ struct WikiPage<T: Decodable & Identifiable>: View {
 
         }
     }
+    
 }
 
+
+
 //#Preview {
-//    WikiPage()
+  //  WikiPage()
 //}
