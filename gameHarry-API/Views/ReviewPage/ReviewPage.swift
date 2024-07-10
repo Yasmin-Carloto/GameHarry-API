@@ -16,6 +16,7 @@ struct ReviewPage: View {
     init(potions: [ElixirModel]){
         self.potions = potions
     }
+    
     var body: some View {
         VStack(alignment: .center) {
             Text("Prepare-se para a aula de poções!")
@@ -31,7 +32,7 @@ struct ReviewPage: View {
                         CardPotion(potion: potion)
                     }
                 }
-//                Spacer()
+
                 NavigationLink("Pular Revisão", destination: LandingPage().navigationBarBackButtonHidden())
                     .buttonStyle(PrimaryButton())
                     .frame(maxWidth: .infinity, alignment: .center)
@@ -50,16 +51,16 @@ struct ReviewPage: View {
     
     private func startTimer() {
         
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-            
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             if self.sliderValue > 1 {
                 self.sliderValue -= 1
             } else {
-                timer.invalidate()
-                self.timer = nil
+                
             }
-            
+            startTimer()
         }
+
+
     }
 
 }
