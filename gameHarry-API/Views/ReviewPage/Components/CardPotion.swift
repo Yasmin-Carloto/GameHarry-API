@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardPotion: View {
-    let potion: ElixirModel
+    let potion: Potion
     
     var body: some View {
         VStack{
@@ -17,7 +17,8 @@ struct CardPotion: View {
                     .frame(height: 100)
                 VStack(alignment: .center){
                     Text(potion.name)
-                        .lineLimit(2)
+                        .frame(maxHeight: .infinity)
+                        .lineLimit(10)
                         .fixedSize(horizontal: false, vertical: true)
                         .font(.cinzelDecorative(.black))
                        
@@ -34,9 +35,10 @@ struct CardPotion: View {
                 Text("Ingredients")
                     .font(.cinzelDecorative(.bold, size: 18))
                 ScrollView(.horizontal, showsIndicators: false){
-                    HStack{
-                        ForEach(potion.ingridients) {ingridient in
+                    HStack(alignment: .top){
+                        ForEach(potion.ingredients) {ingridient in
                             CardIngredient(ingridientName: ingridient.name)
+                                .frame(maxWidth: .infinity)
                         }
                     }
                 }
@@ -52,6 +54,6 @@ struct CardPotion: View {
 }
 
 #Preview {
-    let potion = ElixirModel(id: "1", name: "Scurvy Grass", difficulty: "Medium", ingridients: [Ingridient(id: "1", name: "a")])
+    let potion = Potion(id: "1", name: "Scurvy Grass", difficulty: "Medium", ingredients: [Ingredients(id: "1", name: "a")])
     return CardPotion(potion: potion)
 }

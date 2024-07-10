@@ -6,12 +6,9 @@
 //
 
 import Foundation
-struct ElixirModel: Codable, Identifiable {
+struct Potion: Codable, Identifiable {
     let id: String
     let name: String
     let difficulty: String
-    let ingridients: [Ingridient]
+    let ingredients: [Ingredients]
 }
-
-// Requisitar poções pra view
-// Usar o Dispatch Queue para atualizar a view assincronamente

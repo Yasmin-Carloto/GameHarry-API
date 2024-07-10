@@ -16,11 +16,15 @@ struct CardIngredient: View {
                 .resizable()
                 .scaledToFit()
                 .foregroundStyle(Color.white)
-                .frame(height: 50)
+                .frame(width: 80, height: 50)
             Text(ingridientName)
                 .foregroundStyle(Color.white)
                 .font(.caption)
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: 80, maxHeight: .infinity)
+                .lineLimit(10)
         }
+        .frame(width: 80)
         .padding(.vertical, 2)
         .padding(.horizontal, 6)
         .background(Color.darkCoyote)
@@ -30,5 +34,5 @@ struct CardIngredient: View {
 }
 
 #Preview {
-    CardIngredient(ingridientName: "Scurvy Grass")
+    CardIngredient(ingridientName: "Scurvy Grassfffffffffffffffffffffff fffffffffffffff")
 }

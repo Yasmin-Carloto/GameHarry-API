@@ -11,12 +11,10 @@ struct ReviewPage: View {
     @State private var sliderValue: Double = 30
     @State private var timer: Timer? = nil
     private var upperBound: Int = 30
+    private var viewModel: ElixirViewModel = ElixirViewModel()
     
-    var potions: [ElixirModel]
-    init(potions: [ElixirModel]){
-        self.potions = potions
-    }
-    
+    @State private var potions: [Potion] = []
+
     var body: some View {
         VStack(alignment: .center) {
             Text("Prepare-se para a aula de poções!")
@@ -47,6 +45,13 @@ struct ReviewPage: View {
         .onAppear(perform: {
             startTimer()
         })
+        .task {
+            do {
+                potions = try await viewModel.fetchElixirs()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
     
     private func startTimer() {
@@ -55,12 +60,10 @@ struct ReviewPage: View {
             if self.sliderValue > 1 {
                 self.sliderValue -= 1
             } else {
-                
+                self.sliderValue = 1
             }
             startTimer()
         }
-
-
     }
 
 }
@@ -69,23 +72,23 @@ struct ReviewPage: View {
     
     
     return NavigationStack{
-        ReviewPage(potions: elixirs)
+        ReviewPage()
     }
 }
-let elixirs: [ElixirModel] = [
-    ElixirModel(id: "1", name: "Elixir da Coragem", difficulty: "Avançado", ingridients: [
-        Ingridient(id: "1", name: "a"),
-        Ingridient(id: "2", name: "a"),
-        Ingridient(id: "3", name: "a")
+let elixirs: [Potion] = [
+    Potion(id: "1", name: "Elixir da Coragem", difficulty: "Avançado", ingredients: [
+        Ingredients(id: "1", name: "a"),
+        Ingredients(id: "2", name: "a"),
+        Ingredients(id: "3", name: "a")
     ]),
-    ElixirModel(id: "2", name: "Poção do Amor", difficulty: "Intermediário", ingridients: [
-        Ingridient(id: "4", name: "a"),
-        Ingridient(id: "5", name: "a"),
-        Ingridient(id: "6", name: "a"),
+    Potion(id: "2", name: "Poção do Amor", difficulty: "Intermediário", ingredients: [
+        Ingredients(id: "4", name: "a"),
+        Ingredients(id: "5", name: "a"),
+        Ingredients(id: "6", name: "a"),
     ]),
-    ElixirModel(id: "3", name: "Poção de Invisibilidade", difficulty: "Avançado", ingridients: [
-        Ingridient(id: "7", name: "a"),
-        Ingridient(id: "8", name: "a"),
-        Ingridient(id: "9", name: "a"),
+    Potion(id: "3", name: "Poção de Invisibilidade", difficulty: "Avançado", ingredients: [
+        Ingredients(id: "7", name: "a"),
+        Ingredients(id: "8", name: "a"),
+        Ingredients(id: "9", name: "a"),
     ])
 ]

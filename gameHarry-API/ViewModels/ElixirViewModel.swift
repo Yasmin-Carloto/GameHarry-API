@@ -10,11 +10,11 @@ class ElixirViewModel {
     
     var isLoading: Bool = false
     
-    func fetchElixirs() async -> [ElixirModel] {
+    func fetchElixirs() async -> [Potion] {
         do {
-            let fetchedElixirs: [ElixirModel] = try await ApiServices.shared.fetchData(from: WizardWorldEndpoint.potions) /*try await ApiServices.shared.fetchData(from: WizardWorldEndpoint.houses)*/
+            let fetchedElixirs: [Potion] = try await ApiServices.shared.fetchData(from: WizardWorldEndpoint.potions)
             let filteredElixirs = filterElixirs(elixirs: fetchedElixirs)
-            return filteredElixirs
+            return filteredElixirs.shuffled()
         } catch {
             self.isLoading = false
             print(error.localizedDescription)
@@ -22,11 +22,11 @@ class ElixirViewModel {
         }
     }
     
-    func filterElixirs(elixirs: [ElixirModel]) -> [ElixirModel]{
-        var filteredElixirs: [ElixirModel] = []
+    private func filterElixirs(elixirs: [Potion]) -> [Potion]{
+        var filteredElixirs: [Potion] = []
         
         for potion in elixirs {
-            if potion.ingridients.count > 0{
+            if potion.ingredients.count > 0 && potion.difficulty != "Unknown"{
                 filteredElixirs.append(potion)
             }
         }
