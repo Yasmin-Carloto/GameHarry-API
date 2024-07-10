@@ -15,9 +15,9 @@ class WikiPageFactory {
         case .potions:
             return AnyView(WikiPage<Potion>(endpoint: endpoint))
         case .spells:
-            return AnyView(WikiPage<Spell>(endpoint: endpoint))
+            return AnyView(WikiPage<Potion>(endpoint: endpoint))
         case .wizards:
-            return AnyView(WikiPage<Wizard>(endpoint: endpoint))
+            return AnyView(WikiPage<Potion>(endpoint: endpoint))
 
         }
     }
