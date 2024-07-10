@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F23E0152C3D590700EBC68D /* ReviewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E0142C3D590700EBC68D /* ReviewPage.swift */; };
+		3F23E0182C3D5B8200EBC68D /* ReviewTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E0172C3D5B8200EBC68D /* ReviewTimer.swift */; };
+		3F23E01A2C3D7F6100EBC68D /* CardPotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E0192C3D7F6100EBC68D /* CardPotion.swift */; };
+		3F23E01C2C3D7FAC00EBC68D /* CardIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E01B2C3D7FAC00EBC68D /* CardIngredient.swift */; };
+		3FC81FD92C3DB9CE00BF2803 /* ElixirModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC81FD82C3DB9CE00BF2803 /* ElixirModel.swift */; };
+		3FC81FDB2C3DBE0C00BF2803 /* IngridientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC81FDA2C3DBE0C00BF2803 /* IngridientModel.swift */; };
 		B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */; };
 		B214ACF92C35740200A362EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B214ACF82C35740200A362EB /* Assets.xcassets */; };
 		B214ACFC2C35740200A362EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B214ACFB2C35740200A362EB /* Preview Assets.xcassets */; };
@@ -60,6 +66,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F23E0142C3D590700EBC68D /* ReviewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPage.swift; sourceTree = "<group>"; };
+		3F23E0172C3D5B8200EBC68D /* ReviewTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTimer.swift; sourceTree = "<group>"; };
+		3F23E0192C3D7F6100EBC68D /* CardPotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPotion.swift; sourceTree = "<group>"; };
+		3F23E01B2C3D7FAC00EBC68D /* CardIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIngredient.swift; sourceTree = "<group>"; };
+		3FC81FD82C3DB9CE00BF2803 /* ElixirModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixirModel.swift; sourceTree = "<group>"; };
+		3FC81FDA2C3DBE0C00BF2803 /* IngridientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngridientModel.swift; sourceTree = "<group>"; };
 		B214ACF12C35740100A362EB /* gameHarry-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gameHarry-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameHarry_APIApp.swift; sourceTree = "<group>"; };
 		B214ACF82C35740200A362EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +136,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F23E0132C3D58EF00EBC68D /* ReviewPage */ = {
+			isa = PBXGroup;
+			children = (
+				3F23E0162C3D5B4500EBC68D /* Components */,
+				3F23E0142C3D590700EBC68D /* ReviewPage.swift */,
+			);
+			path = ReviewPage;
+			sourceTree = "<group>";
+		};
+		3F23E0162C3D5B4500EBC68D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3F23E0172C3D5B8200EBC68D /* ReviewTimer.swift */,
+				3F23E0192C3D7F6100EBC68D /* CardPotion.swift */,
+				3F23E01B2C3D7FAC00EBC68D /* CardIngredient.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		B214ACE82C35740100A362EB = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +227,7 @@
 		B214AD2D2C35901B00A362EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3F23E0132C3D58EF00EBC68D /* ReviewPage */,
 				CE3228062C382D9100F3E8D8 /* WikiPage */,
 				CEE89F5F2C36E5A4005615B6 /* WelcomePage */,
 				B214AD332C35931300A362EB /* SettingsPage.swift */,
@@ -321,6 +353,8 @@
 			isa = PBXGroup;
 			children = (
 				CEE89F642C36E6C1005615B6 /* HouseModel.swift */,
+				3FC81FD82C3DB9CE00BF2803 /* ElixirModel.swift */,
+				3FC81FDA2C3DBE0C00BF2803 /* IngridientModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -495,11 +529,17 @@
 			files = (
 				CEE89F622C36E603005615B6 /* String+Extension.swift in Sources */,
 				B214AD302C35903800A362EB /* WelcomePage.swift in Sources */,
+				3F23E01C2C3D7FAC00EBC68D /* CardIngredient.swift in Sources */,
+				3F23E01A2C3D7F6100EBC68D /* CardPotion.swift in Sources */,
 				CE3228082C382DA800F3E8D8 /* WikiPage.swift in Sources */,
+				3F23E0152C3D590700EBC68D /* ReviewPage.swift in Sources */,
 				CEC321592C36CFFB00941979 /* LandingPage.swift in Sources */,
+				3F23E0182C3D5B8200EBC68D /* ReviewTimer.swift in Sources */,
 				B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */,
+				3FC81FD92C3DB9CE00BF2803 /* ElixirModel.swift in Sources */,
 				CE32280E2C3C0A7400F3E8D8 /* PrimaryButton.swift in Sources */,
 				CE853AFB2C3C1AFA008CF20B /* TextShimmer.swift in Sources */,
+				3FC81FDB2C3DBE0C00BF2803 /* IngridientModel.swift in Sources */,
 				CE32280C2C3C099D00F3E8D8 /* WikiPageFactory.swift in Sources */,
 				CEE89F6A2C36F62F005615B6 /* View+Extension.swift in Sources */,
 				CEE89F782C36FBE6005615B6 /* Font+Extension.swift in Sources */,
