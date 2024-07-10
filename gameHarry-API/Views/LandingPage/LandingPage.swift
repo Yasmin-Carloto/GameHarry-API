@@ -10,7 +10,6 @@ import SwiftUI
 
 struct LandingPage: View {
     private let endpoints: [WizardWorldEndpoint] = WizardWorldEndpoint.allCases
-    @State private var isAnimating: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -32,34 +31,9 @@ struct LandingPage: View {
                     .padding(.horizontal, 8.0)
                 }
                 
-                Text("Seu ano em hogwarts")
+                Text("Your year in Hogwarts")
                     .font(.cinzelDecorative(.bold))
                     .foregroundStyle(.roseEbony)
-                ZStack {
-                    Image("cauldron-empty")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                    
-                        .overlay {
-                            Image("cauldron-overglow")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .opacity(isAnimating ? 1 : 0)
-                        }
-                    ZStack {
-                        LinearGradient(gradient: Gradient(colors: [.blue, .red]),
-                                       startPoint: .topLeading,
-                                       endPoint: .bottom)
-                            .mask(Image("cauldron-good-potion-liquid")
-                              .resizable()
-                              .aspectRatio(contentMode: .fit))
-                        Image("cauldron-good-potion-liquid")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .blendMode(.multiply)
-                        
-                    }
-                }
                 
                 Button("Começar") {
                     
@@ -74,15 +48,6 @@ struct LandingPage: View {
         }
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
-        .onAppear {
-            withAnimation(
-                Animation.easeInOut(duration: 1)
-                    .repeatForever(autoreverses: true)
-            ) {
-                isAnimating = true
-            }
-        }
-        
     }
 }
 
