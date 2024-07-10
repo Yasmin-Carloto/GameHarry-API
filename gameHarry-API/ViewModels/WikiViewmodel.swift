@@ -2,64 +2,57 @@
 //  WikiViewmodel.swift
 //  gameHarry-API
 //
-//  Created by Ingryd Cordeiro Duarte on 08/07/24.
+//  Created by Ingryd Cordeiro Duarte on 09/07/24.
 //
 
 import Foundation
-//TODO: verifique o endpoint e puxe uma viewmodel?
 
-
-// MARK: - Spells
-class SpellsViewModel: ObservableObject {
-    @Published var title: String = "Feitiços"
+class WikiViewModel: ObservableObject{
+    class PotionsViewModel: ObservableObject{
+        
+        var isLoading: Bool = false
+        
+        func fetchPotions() async -> [Potion] {
+            do {
+                let fetchedPotions: [Potion] = try await ApiServices.shared.fetchData(from: WizardWorldEndpoint.potions)
+                return fetchedPotions
+            } catch {
+                self.isLoading = false
+                print(error.localizedDescription)
+                return []
+            }
+        }
+    }
     
-    var isLoading: Bool = false
+    class SpellViewModel: ObservableObject{
+        
+        var isLoading: Bool = false
+        
+        func fetchSpells() async -> [Spell] {
+            do {
+                let fetchedSpells: [Spell] = try await ApiServices.shared.fetchData(from: WizardWorldEndpoint.spells)
+                return fetchedSpells
+            } catch {
+                self.isLoading = false
+                print(error.localizedDescription)
+                return []
+            }
+        }
+    }
     
-    func fetchSpells() async -> [Spell] {
-        do {
-            let fetchedSpells: [Spell] = try await ApiServices.shared.fetchData(from: WizardWorldEndpoint.spells)
-            return fetchedSpells
-        } catch {
-            self.isLoading = false
-            print(error.localizedDescription)
-            return []
+    class WizardsViewModel:ObservableObject {
+        
+        var isLoading: Bool = false
+        
+        func fetchWizards() async -> [Wizard]{
+            do {
+                let fetchedWizards: [Wizard] = try await ApiServices.shared.fetchData(from: WizardWorldEndpoint.wizards)
+                return fetchedWizards
+            } catch {
+                self.isLoading = false
+                print(error.localizedDescription)
+                return []
+            }
         }
     }
 }
-
-// MARK: - Wizards
-class WizardViewModel: ObservableObject {
-    @Published var title: String = "Bruxos"
-    
-    var isLoading: Bool = false
-    
-    func fetchWizards() async -> [Wizard] {
-        do {
-            let fetchedWizards: [Wizard] = try await ApiServices.shared.fetchData(from: WizardWorldEndpoint.wizards)
-            return fetchedWizards
-        } catch {
-            self.isLoading = false
-            print(error.localizedDescription)
-            return []
-        }
-    }
-}
-
-// MARK: - Potions
-class PotionsViewModel: ObservableObject {
-    @Published var title: String = "Poções"
-    
-    var isLoading: Bool = false
-    
-    func fetchPotions() async -> [Potion] {
-        do {
-            let fetchedPotions: [Potion] = try await ApiServices.shared.fetchData(from: WizardWorldEndpoint.potions)
-            return fetchedPotions
-        } catch {
-            self.isLoading = false
-            print(error.localizedDescription)
-            return []
-        }
-    }
-}
-

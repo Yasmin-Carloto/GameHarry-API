@@ -24,19 +24,3 @@ struct Head: Codable {
 struct Trait: Codable {
     let id, name: String
 }
-
-
-// APENAS PARA TESTES
-struct Potion: Decodable, Identifiable {
-    let id, name: String
-}
-
-struct Spell: Decodable, Identifiable {
-    let id, name: String
-}
-
-struct Wizard: Decodable, Identifiable {
-    let id: String
-    let firstName: String?
-    let lastName: String
-}

@@ -10,6 +10,7 @@ import SwiftUI
 struct SearchBar: View {
     @Binding var text: String
     var placeholder: String //pega o "hint"
+    @State private var searchActive: Bool = false
     
     var body: some View{
         HStack{
@@ -17,7 +18,6 @@ struct SearchBar: View {
             TextField(placeholder, text: $text )
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 //.frame(width: 360, height: 40)
-                .background(Color.searchBar)
                 .cornerRadius(12)
                 //paddings
         }

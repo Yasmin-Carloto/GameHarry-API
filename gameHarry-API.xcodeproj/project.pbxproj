@@ -17,6 +17,11 @@
 		B214AD302C35903800A362EB /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD2F2C35903800A362EB /* WelcomePage.swift */; };
 		B214AD342C35931300A362EB /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD332C35931300A362EB /* SettingsPage.swift */; };
 		B2B6591B2C3C250C00682D91 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6591A2C3C250C00682D91 /* SearchBar.swift */; };
+		B2BDD10A2C3D7CA300474C6A /* WikiViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDD1092C3D7CA300474C6A /* WikiViewmodel.swift */; };
+		B2BDD10E2C3DB85100474C6A /* SpellsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDD10D2C3DB85100474C6A /* SpellsModel.swift */; };
+		B2BDD1102C3DB86C00474C6A /* WizardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDD10F2C3DB86C00474C6A /* WizardModel.swift */; };
+		B2C4E0512C3EA59600065304 /* PotionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C4E0502C3EA59600065304 /* PotionsModel.swift */; };
+		B2C4E0532C3EB52A00065304 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C4E0522C3EB52A00065304 /* CardView.swift */; };
 		CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */; };
 		CE3228082C382DA800F3E8D8 /* WikiPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3228072C382DA800F3E8D8 /* WikiPage.swift */; };
 		CE32280C2C3C099D00F3E8D8 /* WikiPageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32280B2C3C099D00F3E8D8 /* WikiPageFactory.swift */; };
@@ -74,6 +79,11 @@
 		B214AD2F2C35903800A362EB /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 		B214AD332C35931300A362EB /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 		B2B6591A2C3C250C00682D91 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		B2BDD1092C3D7CA300474C6A /* WikiViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewmodel.swift; sourceTree = "<group>"; };
+		B2BDD10D2C3DB85100474C6A /* SpellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsModel.swift; sourceTree = "<group>"; };
+		B2BDD10F2C3DB86C00474C6A /* WizardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardModel.swift; sourceTree = "<group>"; };
+		B2C4E0502C3EA59600065304 /* PotionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsModel.swift; sourceTree = "<group>"; };
+		B2C4E0522C3EB52A00065304 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewmodel.swift; sourceTree = "<group>"; };
 		CE3228072C382DA800F3E8D8 /* WikiPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiPage.swift; sourceTree = "<group>"; };
 		CE32280B2C3C099D00F3E8D8 /* WikiPageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiPageFactory.swift; sourceTree = "<group>"; };
@@ -210,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */,
+				B2BDD1092C3D7CA300474C6A /* WikiViewmodel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -227,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				B2B6591A2C3C250C00682D91 /* SearchBar.swift */,
+				B2C4E0522C3EB52A00065304 /* CardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -324,6 +336,9 @@
 			isa = PBXGroup;
 			children = (
 				CEE89F642C36E6C1005615B6 /* HouseModel.swift */,
+				B2BDD10D2C3DB85100474C6A /* SpellsModel.swift */,
+				B2BDD10F2C3DB86C00474C6A /* WizardModel.swift */,
+				B2C4E0502C3EA59600065304 /* PotionsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -496,7 +511,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BDD10E2C3DB85100474C6A /* SpellsModel.swift in Sources */,
 				CEE89F622C36E603005615B6 /* String+Extension.swift in Sources */,
+				B2BDD10A2C3D7CA300474C6A /* WikiViewmodel.swift in Sources */,
 				B214AD302C35903800A362EB /* WelcomePage.swift in Sources */,
 				CE3228082C382DA800F3E8D8 /* WikiPage.swift in Sources */,
 				CEC321592C36CFFB00941979 /* LandingPage.swift in Sources */,
@@ -504,14 +521,17 @@
 				CE32280E2C3C0A7400F3E8D8 /* PrimaryButton.swift in Sources */,
 				CE853AFB2C3C1AFA008CF20B /* TextShimmer.swift in Sources */,
 				CE32280C2C3C099D00F3E8D8 /* WikiPageFactory.swift in Sources */,
+				B2C4E0512C3EA59600065304 /* PotionsModel.swift in Sources */,
 				CEE89F6A2C36F62F005615B6 /* View+Extension.swift in Sources */,
 				CEE89F782C36FBE6005615B6 /* Font+Extension.swift in Sources */,
 				B214AD202C357BE700A362EB /* Apiservice.swift in Sources */,
 				CEE89F652C36E6C1005615B6 /* HouseModel.swift in Sources */,
 				CE853AFF2C3C1C0B008CF20B /* Text+Extension.swift in Sources */,
+				B2BDD1102C3DB86C00474C6A /* WizardModel.swift in Sources */,
 				CE853AFD2C3C1BD2008CF20B /* RoundedImage.swift in Sources */,
 				B214AD342C35931300A362EB /* SettingsPage.swift in Sources */,
 				B2B6591B2C3C250C00682D91 /* SearchBar.swift in Sources */,
+				B2C4E0532C3EB52A00065304 /* CardView.swift in Sources */,
 				CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
