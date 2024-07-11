@@ -7,8 +7,8 @@
 
 import Foundation
 
-// Elixirs
-struct Potion: Codable, Identifiable {
-    let id, name: String
-    let effect: String?
-}
+//// Elixirs
+//struct Potion: Codable, Identifiable {
+//    let id, name: String
+//    let effect: String?
+//}

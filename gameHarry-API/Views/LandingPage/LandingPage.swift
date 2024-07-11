@@ -60,10 +60,10 @@ struct LandingPage: View {
                         
                     }
                 }
-                
-                Button("Começar") {
-                    
-                }
+
+                NavigationLink(destination: ReviewPage(), label: {
+                    Text("Começar")
+                })
                 .buttonStyle(PrimaryButton())
                 .frame(maxWidth: .infinity, alignment: .center)
             }

@@ -18,7 +18,6 @@ class WikiPageFactory {
             return AnyView(WikiPage<Spell>(viewModel: WikiViewModel(), endpoint: endpoint))
         case .wizards:
             return AnyView(WikiPage<Wizard>(viewModel: WikiViewModel(), endpoint: endpoint))
-
         }
     }
 }
