@@ -54,6 +54,6 @@ struct CardPotion: View {
 }
 
 #Preview {
-    let potion = Potion(id: "1", name: "Scurvy Grass", difficulty: "Medium", ingredients: [Ingredients(id: "1", name: "a")])
+    let potion = Potion(id: "1", name: "Scurvy Grass", difficulty: "Medium", effect: "Effect", ingredients: [Ingredients(id: "1", name: "a")])
     return CardPotion(potion: potion)
 }

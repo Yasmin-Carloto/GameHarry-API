@@ -10,5 +10,6 @@ struct Potion: Codable, Identifiable {
     let id: String
     let name: String
     let difficulty: String
+    let effect: String?
     let ingredients: [Ingredients]
 }

@@ -76,17 +76,17 @@ struct ReviewPage: View {
     }
 }
 let elixirs: [Potion] = [
-    Potion(id: "1", name: "Elixir da Coragem", difficulty: "Avançado", ingredients: [
+    Potion(id: "1", name: "Elixir da Coragem", difficulty: "Avançado", effect: "Effects", ingredients: [
         Ingredients(id: "1", name: "a"),
         Ingredients(id: "2", name: "a"),
         Ingredients(id: "3", name: "a")
     ]),
-    Potion(id: "2", name: "Poção do Amor", difficulty: "Intermediário", ingredients: [
+    Potion(id: "2", name: "Poção do Amor", difficulty: "Intermediário", effect: "Effects", ingredients: [
         Ingredients(id: "4", name: "a"),
         Ingredients(id: "5", name: "a"),
         Ingredients(id: "6", name: "a"),
     ]),
-    Potion(id: "3", name: "Poção de Invisibilidade", difficulty: "Avançado", ingredients: [
+    Potion(id: "3", name: "Poção de Invisibilidade", difficulty: "Avançado", effect: "Effects", ingredients: [
         Ingredients(id: "7", name: "a"),
         Ingredients(id: "8", name: "a"),
         Ingredients(id: "9", name: "a"),
