@@ -6,7 +6,8 @@
 //
 
 import Foundation
-struct Potion: Codable, Identifiable {
+
+struct Potion: Codable, Identifiable{
     let id: String
     let name: String
     let difficulty: String
