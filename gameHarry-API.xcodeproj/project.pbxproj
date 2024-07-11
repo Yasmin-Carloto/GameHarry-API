@@ -11,6 +11,7 @@
 		3F23E0182C3D5B8200EBC68D /* ReviewTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E0172C3D5B8200EBC68D /* ReviewTimer.swift */; };
 		3F23E01A2C3D7F6100EBC68D /* CardPotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E0192C3D7F6100EBC68D /* CardPotion.swift */; };
 		3F23E01C2C3D7FAC00EBC68D /* CardIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E01B2C3D7FAC00EBC68D /* CardIngredient.swift */; };
+		3F5482C52C40029D00DD9020 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5482C42C40029D00DD9020 /* TutorialPage.swift */; };
 		3F63E8002C3EAA6C00A500BA /* ElixirViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63E7FF2C3EAA6C00A500BA /* ElixirViewModel.swift */; };
 		3FC81FD92C3DB9CE00BF2803 /* Potion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC81FD82C3DB9CE00BF2803 /* Potion.swift */; };
 		3FC81FDB2C3DBE0C00BF2803 /* IngridientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC81FDA2C3DBE0C00BF2803 /* IngridientModel.swift */; };
@@ -77,6 +78,7 @@
 		3F23E0172C3D5B8200EBC68D /* ReviewTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTimer.swift; sourceTree = "<group>"; };
 		3F23E0192C3D7F6100EBC68D /* CardPotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPotion.swift; sourceTree = "<group>"; };
 		3F23E01B2C3D7FAC00EBC68D /* CardIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIngredient.swift; sourceTree = "<group>"; };
+		3F5482C42C40029D00DD9020 /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialPage.swift; path = "../../../../GameHarry-Pocs/GamePageHP/TutorialPage.swift"; sourceTree = "<group>"; };
 		3F63E7FF2C3EAA6C00A500BA /* ElixirViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixirViewModel.swift; sourceTree = "<group>"; };
 		3FC81FD82C3DB9CE00BF2803 /* Potion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potion.swift; sourceTree = "<group>"; };
 		3FC81FDA2C3DBE0C00BF2803 /* IngridientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngridientModel.swift; sourceTree = "<group>"; };
@@ -169,6 +171,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		3F5482C32C40027500DD9020 /* TutorialPage */ = {
+			isa = PBXGroup;
+			children = (
+				3F5482C42C40029D00DD9020 /* TutorialPage.swift */,
+			);
+			path = TutorialPage;
+			sourceTree = "<group>";
+		};
 		B214ACE82C35740100A362EB = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +251,7 @@
 		B214AD2D2C35901B00A362EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3F5482C32C40027500DD9020 /* TutorialPage */,
 				3F23E0132C3D58EF00EBC68D /* ReviewPage */,
 				CE3228062C382D9100F3E8D8 /* WikiPage */,
 				CEE89F5F2C36E5A4005615B6 /* WelcomePage */,
@@ -550,6 +561,7 @@
 			files = (
 				B2BDD10E2C3DB85100474C6A /* SpellsModel.swift in Sources */,
 				CEE89F622C36E603005615B6 /* String+Extension.swift in Sources */,
+				3F5482C52C40029D00DD9020 /* TutorialPage.swift in Sources */,
 				B2BDD10A2C3D7CA300474C6A /* WikiViewmodel.swift in Sources */,
 				B214AD302C35903800A362EB /* WelcomePage.swift in Sources */,
 				3F23E01C2C3D7FAC00EBC68D /* CardIngredient.swift in Sources */,
