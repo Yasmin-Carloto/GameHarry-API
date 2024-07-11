@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CardView: View {
     let cardImage: String?
+    var imageURL: String?
     let name, subname: String
     
     var body: some View {
@@ -17,10 +18,20 @@ struct CardView: View {
                 .frame(width: 170, height: 170)
                 .overlay{
                     ZStack{
-                        Image(systemName: self.cardImage ?? "globe")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .foregroundStyle(Color.brown)
+                        if let imageUrl = imageURL, !imageUrl.isEmpty {
+                            // Se imageURL estiver presente, não for vazio e não for "null", use URLImage
+                            URLImage(url: imageUrl)
+                                .aspectRatio(contentMode: .fill)
+                                .foregroundStyle(Color.brown) // Aplica cor de primeiro plano, se necessário
+                                .clipped() // Corta a imagem para se ajustar ao contêiner
+
+                        } else {
+                            // Caso contrário, use uma imagem de sistema padrão
+                            Image(systemName: cardImage ?? "globe")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .foregroundStyle(Color.brown) // Aplica cor de primeiro plano, se necessário
+                        }
                         LinearGradient(gradient: Gradient(colors: [Color.roseEbony.opacity(0.7), Color.red.opacity(0.7), Color.black]),
                                        startPoint: .top,
                                        endPoint: .bottom)

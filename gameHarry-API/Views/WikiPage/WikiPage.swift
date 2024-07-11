@@ -13,6 +13,13 @@ struct WikiPage<T: Decodable & Identifiable>: View {
     var endpoint: Endpoint
     @State private var items:[T] = []
     @State private var searchItem: String = ""
+    @State private var potions: [Datum] = []
+    
+    var filteredPotions: [Datum] {
+        potions.filter { potion in
+            searchItem.isEmpty || (potion.attributes.name?.localizedCaseInsensitiveContains(searchItem) ?? false)
+        }
+    }
     
     var filteredItems: [T] {
         items.filter { item in
@@ -30,25 +37,49 @@ struct WikiPage<T: Decodable & Identifiable>: View {
                 //searchBar
                 SearchBar(text: $searchItem, placeholder: "Search \(endpoint.path.lowercased())")
                     .padding(3)
-                //ScrollView + LazyVGrid
-                ScrollView{
-                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20){
-                        ForEach(filteredItems) { item in
-                            returnCard(item) //funcao de ViewBuild
-                            
+                
+                if endpoint.path == "elixirs"{
+                    // Display potions list
+                    ScrollView {
+                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
+                            ForEach(filteredPotions) { PotionAttributes in
+                                CardView(cardImage: "", imageURL: PotionAttributes.attributes.image,
+                                         name: PotionAttributes.attributes.name ?? "Unknown potion ",
+                                         subname: PotionAttributes.attributes.effect ?? "Unknown Effect")
+                                .onAppear {
+                                    getPotion(PotionAttributes.attributes.name!)
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    //Display generic items
+                    ScrollView {
+                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
+                            ForEach(filteredItems) { item in
+                                returnCard(item) // Function to build view
+                            }
                         }
                     }
                 }
             }
         }
         .task {
-            do {
-                try await fetchData()
-            } catch {
-                print("Error fetching data")
+            if endpoint.path != "elixirs" {
+                do {
+                    try await fetchData()
+                } catch {
+                    print("Error fetching data")
+                }
+            } else {
+                do {
+                    try await loadPotions()
+                } catch {
+                    print("Error fetching potions")
+                }
             }
         }
-    //page settings
+        //page settings
         .foregroundStyle(.roseEbony)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .padding(.horizontal, 12)
@@ -75,10 +106,61 @@ struct WikiPage<T: Decodable & Identifiable>: View {
     private func fetchData() async throws {
         do {
             items = try await ApiServices.shared.fetchData(from: endpoint)
-            print(items)
         } catch {
             print("Error fetching data: \(error)")
             
         }
+    }
+    
+    private func loadPotions() {
+        Task {
+            do {
+                let fetchedPotions = try await ApiServices.shared.fetchAllPotions()
+                potions = fetchedPotions
+                print(potions)
+            } catch {
+                print("Failed to fetch data: \(error)")
+            }
+        }
+    }
+    private func getPotion(_ item: String) {
+        let slugConvertedString = convertToSlug(item)
+        Task {
+            do {
+                let request = PotionEndpoint.RequestPotterDB()
+                let result = await NetworkService.shared.request(request,
+                                                           using: .shared)
+                switch result {
+                case .success(let success):
+                    success.data.forEach( {
+                        print($0.attributes.name)
+                    })
+                case .failure(let failure):
+                    print("deu error")
+                }
+                let getPotion: Datum = try await ApiServices.shared.fetchData(from: PotterDBEndpoint.potionID(name: slugConvertedString))
+                print(getPotion.attributes.image)
+                
+            } catch {
+                print("Failed to fetch data: \(error)")
+            }
+        }
+    }
+    /// Converte um nome no formato `Sleekeazy's Hair Potion` para `sleekeazy-s-hair-potion`
+    private func convertToSlug(_ name: String) -> String {
+        // Define uma expressão regular para encontrar caracteres não alfanuméricos e não espaços
+        let regex = try! NSRegularExpression(pattern: "[^a-zA-Z0-9\\s]", options: [])
+        let range = NSRange(location: 0, length: name.utf16.count)
+        
+        // Remove caracteres especiais
+        var slug = regex.stringByReplacingMatches(in: name, options: [], range: range, withTemplate: "")
+        
+        // Substitui espaços por hífens
+        slug = slug.replacingOccurrences(of: " ", with: "-")
+        
+        // Converte para minúsculas
+        slug = slug.lowercased()
+        
+        return slug
     }
 }

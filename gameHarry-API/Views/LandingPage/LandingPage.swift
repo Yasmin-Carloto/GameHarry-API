@@ -35,10 +35,6 @@ struct LandingPage: View {
                     .font(.cinzelDecorative(.bold))
                     .foregroundStyle(.roseEbony)
                 
-                Button("Começar") {
-                    
-                }
-
                 NavigationLink(destination: ReviewPage(), label: {
                     Text("Começar")
                 })
