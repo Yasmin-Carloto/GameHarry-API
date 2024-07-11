@@ -23,52 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "463A6588-508E-4E0D-88DE-C9C14784CB10"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gameHarry-API/Services/API/Apiservice.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "fetchData(from:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "463A6588-508E-4E0D-88DE-C9C14784CB10 - b9472cb2715923f5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for gameHarry_API.ApiServices.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: gameHarry_API.Endpoint) async throws -&gt; &#x3c4;_0_0"
-                  moduleName = "gameHarry-API"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ingrydduarte/Desktop/CodingTest/gameHarry-API/gameHarry-API/Services/API/Apiservice.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16">
-               </Location>
-               <Location
-                  uuid = "463A6588-508E-4E0D-88DE-C9C14784CB10 - b9472cb2715923f5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for gameHarry_API.ApiServices.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: gameHarry_API.Endpoint) async throws -&gt; &#x3c4;_0_0"
-                  moduleName = "gameHarry-API"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ingrydduarte/Desktop/CodingTest/gameHarry-API/gameHarry-API/Services/API/Apiservice.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "553A449A-A7F2-4CE8-A416-2FFF9BA59181"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -79,22 +33,6 @@
             startingLineNumber = "21"
             endingLineNumber = "21"
             landmarkName = "fetchPotions()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "75D88063-40D2-4907-B18D-A07BA8164774"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gameHarry-API/Services/API/Apiservice.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "fetchData(from:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

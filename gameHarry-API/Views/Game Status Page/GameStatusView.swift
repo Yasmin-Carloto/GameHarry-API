@@ -17,24 +17,35 @@ struct GameStatusView: View {
             //random quote
             if let quote = getRandomQuote(gameFinal: .Lose) {
                 SnapeView(quote: quote)
+                
+                CauldronStatusBad()
+                Spacer()
+                Text("PÉSSIMO! Você reprovou de ano!")
+                    .font(.lora(.bold, size: 18))
+                    .foregroundStyle(Color.roseEbony)
+                
+                NavigationLink(destination: TutorialPageView(), label: {
+                    Text("Tentar de novo")
+                })
+                .buttonStyle(PrimaryButton())
+                .frame(maxWidth: .infinity, alignment: .center)
+                
+            } else if let quote = getRandomQuote(gameFinal: .Win){
+                SnapeView(quote: quote)
+                
+                CauldronStatusGood()
+                Spacer()
+                Text("PARABÉNS, você passou de ano!")
+                    .font(.lora(.bold, size: 18))
+                    .foregroundStyle(Color.roseEbony)
+                
+                NavigationLink(destination: LandingPage(), label: {
+                    Text("Passar ano")
+                })
+                .buttonStyle(PrimaryButton())
+                .frame(maxWidth: .infinity, alignment: .center)
             }
-            
-            //cauldron for win and lose
-            CauldronStatusBad()
-            //cauldronStatus()
-            
-            Spacer()
-            Text("PÉSSIMO! Você reprovou de ano!")
-                .font(.lora(.bold, size: 18))
-                .foregroundStyle(Color.roseEbony)
-            
-            //button Reiniciar ou ir para o proximo ano
-            NavigationLink(destination: TutorialPageView(), label: {
-                Text("Tentar de novo")
-            })
-            .buttonStyle(PrimaryButton())
-            .frame(maxWidth: .infinity, alignment: .center)
-        }
+    }
         
         
         //page settings
