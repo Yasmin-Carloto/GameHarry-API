@@ -11,7 +11,7 @@ import SwiftUI
 struct gameHarry_APIApp: App {
     var body: some Scene {
         WindowGroup {
-            LandingPage()
+            GameStatusView()
         }
     }
 }

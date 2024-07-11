@@ -3,8 +3,6 @@
 //  gameHarry-API
 //
 //  Created by Ingryd Cordeiro Duarte on 11/07/24.
-//
-
 import SwiftUI
 
 struct CauldronView: View {

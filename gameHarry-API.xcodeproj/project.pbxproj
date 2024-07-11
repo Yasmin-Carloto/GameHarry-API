@@ -27,6 +27,13 @@
 		B23C2BED2C3FFDF200CD2A35 /* CauldronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BEC2C3FFDF200CD2A35 /* CauldronView.swift */; };
 		B23C2BF22C4001BD00CD2A35 /* SnapeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BF12C4001BD00CD2A35 /* SnapeModel.swift */; };
 		B23C2BF42C40035C00CD2A35 /* SnapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BF32C40035C00CD2A35 /* SnapeView.swift */; };
+		B23C2BF72C40161D00CD2A35 /* TutorialReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BF62C40161D00CD2A35 /* TutorialReviewView.swift */; };
+		B23C2BF92C401C4200CD2A35 /* TutorialPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BF82C401C4200CD2A35 /* TutorialPageView.swift */; };
+		B23C2BFC2C401E1F00CD2A35 /* GameStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BFB2C401E1F00CD2A35 /* GameStatusView.swift */; };
+		B23C2BFE2C401FDF00CD2A35 /* DropZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BFD2C401FDF00CD2A35 /* DropZoneView.swift */; };
+		B23C2C002C402B4E00CD2A35 /* CauldronStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BFF2C402B4E00CD2A35 /* CauldronStatusView.swift */; };
+		B23C2C032C4030BC00CD2A35 /* SnapeQuotes.json in Resources */ = {isa = PBXBuildFile; fileRef = B23C2C022C4030BC00CD2A35 /* SnapeQuotes.json */; };
+		B23C2C052C4030E300CD2A35 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2C042C4030E300CD2A35 /* StatusViewModel.swift */; };
 		B2B6591B2C3C250C00682D91 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6591A2C3C250C00682D91 /* SearchBar.swift */; };
 		B2BDD10A2C3D7CA300474C6A /* WikiViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDD1092C3D7CA300474C6A /* WikiViewmodel.swift */; };
 		B2BDD10E2C3DB85100474C6A /* SpellsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDD10D2C3DB85100474C6A /* SpellsModel.swift */; };
@@ -100,6 +107,13 @@
 		B23C2BEC2C3FFDF200CD2A35 /* CauldronView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauldronView.swift; sourceTree = "<group>"; };
 		B23C2BF12C4001BD00CD2A35 /* SnapeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapeModel.swift; sourceTree = "<group>"; };
 		B23C2BF32C40035C00CD2A35 /* SnapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapeView.swift; sourceTree = "<group>"; };
+		B23C2BF62C40161D00CD2A35 /* TutorialReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialReviewView.swift; sourceTree = "<group>"; };
+		B23C2BF82C401C4200CD2A35 /* TutorialPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageView.swift; sourceTree = "<group>"; };
+		B23C2BFB2C401E1F00CD2A35 /* GameStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatusView.swift; sourceTree = "<group>"; };
+		B23C2BFD2C401FDF00CD2A35 /* DropZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneView.swift; sourceTree = "<group>"; };
+		B23C2BFF2C402B4E00CD2A35 /* CauldronStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauldronStatusView.swift; sourceTree = "<group>"; };
+		B23C2C022C4030BC00CD2A35 /* SnapeQuotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SnapeQuotes.json; path = ../../../../SnapeQuotes.json; sourceTree = "<group>"; };
+		B23C2C042C4030E300CD2A35 /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		B2B6591A2C3C250C00682D91 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		B2BDD1092C3D7CA300474C6A /* WikiViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewmodel.swift; sourceTree = "<group>"; };
 		B2BDD10D2C3DB85100474C6A /* SpellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsModel.swift; sourceTree = "<group>"; };
@@ -249,6 +263,7 @@
 		B214AD2D2C35901B00A362EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B23C2BF52C40160A00CD2A35 /* Tutorial Review Page */,
 				B23C2BEF2C4000BF00CD2A35 /* Game Status Page */,
 				B23C2BE82C3FF12800CD2A35 /* GamePage */,
 				3F23E0132C3D58EF00EBC68D /* ReviewPage */,
@@ -266,6 +281,7 @@
 				CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */,
 				B2BDD1092C3D7CA300474C6A /* WikiViewmodel.swift */,
 				3F63E7FF2C3EAA6C00A500BA /* ElixirViewModel.swift */,
+				B23C2C042C4030E300CD2A35 /* StatusViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -283,6 +299,7 @@
 			children = (
 				B23C2BEA2C3FF14D00CD2A35 /* CardIngredientView.swift */,
 				B23C2BEC2C3FFDF200CD2A35 /* CauldronView.swift */,
+				B23C2BFD2C401FDF00CD2A35 /* DropZoneView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -290,6 +307,7 @@
 		B23C2BEF2C4000BF00CD2A35 /* Game Status Page */ = {
 			isa = PBXGroup;
 			children = (
+				B23C2BFB2C401E1F00CD2A35 /* GameStatusView.swift */,
 				B23C2BF02C4000CB00CD2A35 /* Components */,
 			);
 			path = "Game Status Page";
@@ -299,8 +317,26 @@
 			isa = PBXGroup;
 			children = (
 				B23C2BF32C40035C00CD2A35 /* SnapeView.swift */,
+				B23C2BFF2C402B4E00CD2A35 /* CauldronStatusView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		B23C2BF52C40160A00CD2A35 /* Tutorial Review Page */ = {
+			isa = PBXGroup;
+			children = (
+				B23C2BF62C40161D00CD2A35 /* TutorialReviewView.swift */,
+				B23C2BF82C401C4200CD2A35 /* TutorialPageView.swift */,
+			);
+			path = "Tutorial Review Page";
+			sourceTree = "<group>";
+		};
+		B23C2C012C4030A900CD2A35 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				B23C2C022C4030BC00CD2A35 /* SnapeQuotes.json */,
+			);
+			path = json;
 			sourceTree = "<group>";
 		};
 		CE3228062C382D9100F3E8D8 /* WikiPage */ = {
@@ -332,6 +368,7 @@
 		CEC3215A2C36D79200941979 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B23C2C012C4030A900CD2A35 /* json */,
 				CEC3215B2C36D7B400941979 /* fonts */,
 				B214ACF82C35740200A362EB /* Assets.xcassets */,
 			);
@@ -561,6 +598,7 @@
 				CE853B492C3C2301008CF20B /* Lora-SemiBoldItalic.ttf in Resources */,
 				CE853B4A2C3C2301008CF20B /* Lora-Medium.ttf in Resources */,
 				CE853B4B2C3C2301008CF20B /* Lora-Italic.ttf in Resources */,
+				B23C2C032C4030BC00CD2A35 /* SnapeQuotes.json in Resources */,
 				CE853B4C2C3C2301008CF20B /* Lora-MediumItalic.ttf in Resources */,
 				CE853B4D2C3C2301008CF20B /* Lora-SemiBold.ttf in Resources */,
 				CE853B372C3C1EBE008CF20B /* Cinzel-VariableFont_wght.ttf in Resources */,
@@ -592,6 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23C2BFC2C401E1F00CD2A35 /* GameStatusView.swift in Sources */,
 				B2BDD10E2C3DB85100474C6A /* SpellsModel.swift in Sources */,
 				CEE89F622C36E603005615B6 /* String+Extension.swift in Sources */,
 				B2BDD10A2C3D7CA300474C6A /* WikiViewmodel.swift in Sources */,
@@ -601,8 +640,10 @@
 				CE3228082C382DA800F3E8D8 /* WikiPage.swift in Sources */,
 				3F23E0152C3D590700EBC68D /* ReviewPage.swift in Sources */,
 				CEC321592C36CFFB00941979 /* LandingPage.swift in Sources */,
+				B23C2BF92C401C4200CD2A35 /* TutorialPageView.swift in Sources */,
 				3F23E0182C3D5B8200EBC68D /* ReviewTimer.swift in Sources */,
 				B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */,
+				B23C2C052C4030E300CD2A35 /* StatusViewModel.swift in Sources */,
 				3F63E8002C3EAA6C00A500BA /* ElixirViewModel.swift in Sources */,
 				3FC81FD92C3DB9CE00BF2803 /* Potion.swift in Sources */,
 				CE32280E2C3C0A7400F3E8D8 /* PrimaryButton.swift in Sources */,
@@ -610,7 +651,9 @@
 				3FC81FDB2C3DBE0C00BF2803 /* IngridientModel.swift in Sources */,
 				CE32280C2C3C099D00F3E8D8 /* WikiPageFactory.swift in Sources */,
 				B2C4E0512C3EA59600065304 /* PotionsModel.swift in Sources */,
+				B23C2BF72C40161D00CD2A35 /* TutorialReviewView.swift in Sources */,
 				CEE89F6A2C36F62F005615B6 /* View+Extension.swift in Sources */,
+				B23C2C002C402B4E00CD2A35 /* CauldronStatusView.swift in Sources */,
 				B23C2BF22C4001BD00CD2A35 /* SnapeModel.swift in Sources */,
 				B23C2BED2C3FFDF200CD2A35 /* CauldronView.swift in Sources */,
 				CEE89F782C36FBE6005615B6 /* Font+Extension.swift in Sources */,
@@ -623,6 +666,7 @@
 				B214AD342C35931300A362EB /* SettingsPage.swift in Sources */,
 				B2B6591B2C3C250C00682D91 /* SearchBar.swift in Sources */,
 				B23C2BF42C40035C00CD2A35 /* SnapeView.swift in Sources */,
+				B23C2BFE2C401FDF00CD2A35 /* DropZoneView.swift in Sources */,
 				B2C4E0532C3EB52A00065304 /* CardView.swift in Sources */,
 				CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */,
 			);

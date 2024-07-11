@@ -7,11 +7,10 @@
 
 import Foundation
 
-struct SnapeQuotes: Codable{
-    let approval: String
-    let disapproval: String
-}
-
 struct QuotesContainer: Codable {
     let SnapeQuotes: SnapeQuotes
+}
+
+struct SnapeQuotes: Codable{
+    let approval, disapproval: [String]
 }

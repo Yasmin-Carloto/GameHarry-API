@@ -61,7 +61,7 @@ struct LandingPage: View {
                     }
                 }
 
-                NavigationLink(destination: ReviewPage(), label: {
+                NavigationLink(destination: TutorialPageView(), label: {
                     Text("Começar")
                 })
                 .buttonStyle(PrimaryButton())
