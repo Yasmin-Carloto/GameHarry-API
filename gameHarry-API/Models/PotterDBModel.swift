@@ -9,15 +9,15 @@ import Foundation
 
 // MARK: - PotterDB
 struct PotterDB: Codable {
-    let data: [Datum]
+    let data: [Data]
 }
 
 // MARK: - Datum
-struct Datum: Codable, Identifiable {
+struct Data: Codable, Identifiable {
     let id: String
     let type: TypeEnum
     let attributes: PotionAttributes
-    let links: DatumLinks
+//    let links: DatumLinks
 }
 
 // MARK: - PotionAttributes

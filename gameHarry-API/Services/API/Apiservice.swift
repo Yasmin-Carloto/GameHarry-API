@@ -22,8 +22,8 @@ class ApiServices {
         return decodedData
     }
     
-    func fetchAllPotions() async throws -> [Datum] {
-        var allPotions: [Datum] = []
+    func fetchAllPotions() async throws -> [Data] {
+        var allPotions: [Data] = []
         var currentPage: Int = 1
         var totalPages: Int = 2
         
@@ -31,7 +31,7 @@ class ApiServices {
             let endpoint = PotterDBEndpoint.potions(page: currentPage)
             let result: PotterDB = try await fetchData(from: endpoint)
             allPotions.append(contentsOf: result.data)
-            
+
             currentPage += 1
         } while currentPage <= totalPages
         
@@ -72,8 +72,8 @@ enum WizardWorldEndpoint: Endpoint, CaseIterable {
 
 enum PotterDBEndpoint: Endpoint {
     case potions(page: Int)
-    case potionID(name:String)
-    
+    case potion(named:String)
+
     var baseURL: String {
         return "https://api.potterdb.com/v1/"
     }
@@ -82,8 +82,8 @@ enum PotterDBEndpoint: Endpoint {
         switch self {
         case .potions(let page):
             return "potions?page[number]=\(page)"
-        case .potionID(let name):
-            return "https://api.potterdb.com/v1/potions/\(name)"
+        case .potion(let name):
+            return "potions/\(name)"
         }
     }
 }
@@ -99,7 +99,7 @@ enum PotterDBEndpoint: Endpoint {
 
 
 
-
+/*
 import Foundation
 
 struct Server {
@@ -118,7 +118,6 @@ struct Server {
         return components
     }()
 }
-import Foundation
 
 protocol RequestTemplate {
     associatedtype Response
@@ -307,7 +306,7 @@ extension PotionEndpoint.RequestPotterDB: RequestTemplate {
     var headers: [String: String] { [
         "Content-Type": "application/json",
     ] }
-    
+
 }
 
 
@@ -331,3 +330,4 @@ extension PotionEndpoint.RequestWizardWorld: RequestTemplate {
     
 }
 
+*/

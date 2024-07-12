@@ -4,163 +4,141 @@
 //
 //  Created by User on 05/07/24.
 //
-
 import SwiftUI
 
 struct WikiPage<T: Decodable & Identifiable>: View {
-    //debug let numbers = [1,2,3,4]
-    @ObservedObject var viewModel: WikiViewModel
     var endpoint: Endpoint
-    @State private var items:[T] = []
+
+    @ObservedObject var viewModel: WikiViewModel
+    @State private var items: [T] = []
     @State private var searchItem: String = ""
-    @State private var potions: [Datum] = []
-    
-    var filteredPotions: [Datum] {
-        potions.filter { potion in
-            searchItem.isEmpty || (potion.attributes.name?.localizedCaseInsensitiveContains(searchItem) ?? false)
-        }
-    }
-    
-    var filteredItems: [T] {
-        items.filter { item in
-            searchItem.isEmpty || String(describing: item).localizedCaseInsensitiveContains(searchItem)
-        }
-    }
-    
+    @State private var potions: [Data] = []
+    @State private var potionsFromPotterDB: [Data] = []
+    // Dicionário para armazenar URLs das imagens das poções
+
+
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading){
-                Text(endpoint.path.capitalized)
-                    .font(.cinzelDecorative(.bold))
-                    .padding(2)
-                
-                //searchBar
-                SearchBar(text: $searchItem, placeholder: "Search \(endpoint.path.lowercased())")
-                    .padding(3)
-                
-                if endpoint.path == "elixirs"{
-                    // Display potions list
-                    ScrollView {
-                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
-                            ForEach(filteredPotions) { PotionAttributes in
-                                CardView(cardImage: "", imageURL: PotionAttributes.attributes.image,
-                                         name: PotionAttributes.attributes.name ?? "Unknown potion ",
-                                         subname: PotionAttributes.attributes.effect ?? "Unknown Effect")
-                                .onAppear {
-                                    getPotion(PotionAttributes.attributes.name!)
-                                }
-                            }
-                        }
-                    }
-                } else {
-                    //Display generic items
-                    ScrollView {
-                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
-                            ForEach(filteredItems) { item in
-                                returnCard(item) // Function to build view
-                            }
-                        }
-                    }
-                }
+            VStack(alignment: .leading) {
+                headerView
+                searchBar
+                itemsGridView
             }
         }
         .task {
-            if endpoint.path != "elixirs" {
-                do {
-                    try await fetchData()
-                } catch {
-                    print("Error fetching data")
-                }
-            } else {
-                do {
-                    try await loadPotions()
-                } catch {
-                    print("Error fetching potions")
-                }
-            }
+            await loadData()
         }
-        //page settings
         .foregroundStyle(.roseEbony)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .padding(.horizontal, 12)
         .paperTexture()
     }
-    //retorna um build
-    private func returnCard(_ item: T) -> CardView {
-        if let house = item as? House {
-            return CardView(cardImage: "globe", name: house.name, subname: house.founder)
-        }
-        if let potion = item as? Potion {
-            return CardView(cardImage: "star.fill", name: potion.name, subname: potion.effect ?? "No effect found")
-        }
-        if let spells = item as? Spell {
-            return CardView(cardImage: "globe", name: spells.name, subname: spells.effect ?? "No effect found")
-        }
-        if let wizards = item as? Wizard {
-            return CardView(cardImage: "globe", name: wizards.firstName ?? "None", subname: wizards.lastName)
-        }
-        return CardView(cardImage: "person.fill", name: "None", subname: "None")
+
+    // MARK: - Componentização
+    private var headerView: some View {
+        Text(endpoint.path.capitalized)
+            .font(.cinzelDecorative(.bold))
+            .padding(2)
     }
-    
-    
-    private func fetchData() async throws {
+
+    private var searchBar: some View {
+        SearchBar(text: $searchItem, placeholder: "Search \(endpoint.path.lowercased())")
+            .padding(3)
+    }
+
+    private var itemsGridView: some View {
+        ScrollView {
+            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
+                ForEach(filteredItems) { item in
+                    returnCard(item)
+                }
+            }
+        }
+    }
+
+    // MARK: - Variáveis Computadas
+
+    private var filteredItems: [T] {
+        items.filter { item in
+            searchItem.isEmpty || String(describing: item).localizedCaseInsensitiveContains(searchItem)
+        }
+    }
+    // MARK: - Métodos Auxiliares
+    private func returnCard(_ item: T) -> some View {
+        if let house = item as? House {
+            return AnyView(CardView(cardImage: "globe", name: house.name, subname: house.founder))
+        } else if let potion = item as? Potion {
+            return AnyView(PotionCardView(potion: potion, imageURL: {
+                let convertedName = convertToSlug(potion.name)
+                var imageString = ""
+                potionsFromPotterDB.forEach { data in
+                    print("\(data.attributes.slug) == \(convertedName) ?")
+                    if data.attributes.slug == convertedName {
+                        imageString = data.attributes.image ?? ""
+                    }
+                }
+                return imageString
+            }
+                                         )
+            )
+        } else if let spell = item as? Spell {
+            return AnyView(CardView(cardImage: "globe", name: spell.name, subname: spell.effect ?? "No effect found"))
+        } else if let wizard = item as? Wizard {
+            return AnyView(CardView(cardImage: "globe", name: wizard.firstName ?? "None", subname: wizard.lastName))
+        } else {
+            return AnyView(CardView(cardImage: "person.fill", name: "None", subname: "None"))
+        }
+    }
+
+    private func loadData() async {
         do {
             items = try await ApiServices.shared.fetchData(from: endpoint)
+            potionsFromPotterDB = try await ApiServices.shared.fetchAllPotions()
         } catch {
             print("Error fetching data: \(error)")
-            
         }
     }
-    
-    private func loadPotions() {
-        Task {
-            do {
-                let fetchedPotions = try await ApiServices.shared.fetchAllPotions()
-                potions = fetchedPotions
-                print(potions)
-            } catch {
-                print("Failed to fetch data: \(error)")
-            }
-        }
-    }
-    private func getPotion(_ item: String) {
-        let slugConvertedString = convertToSlug(item)
-        Task {
-            do {
-                let request = PotionEndpoint.RequestPotterDB()
-                let result = await NetworkService.shared.request(request,
-                                                           using: .shared)
-                switch result {
-                case .success(let success):
-                    success.data.forEach( {
-                        print($0.attributes.name)
-                    })
-                case .failure(let failure):
-                    print("deu error")
+
+    private func fetchPotionImage(_ itemName: String) async -> String {
+        let slug = convertToSlug(itemName)
+        do {
+            potionsFromPotterDB = try await ApiServices.shared.fetchAllPotions()
+
+            for potion in potionsFromPotterDB {
+                if slug == potion.attributes.slug {
+                    if let imageURL = potion.attributes.image {
+                        return imageURL
+                    }
+                } else {
+                    return "main-image"
                 }
-                let getPotion: Datum = try await ApiServices.shared.fetchData(from: PotterDBEndpoint.potionID(name: slugConvertedString))
-                print(getPotion.attributes.image)
-                
-            } catch {
-                print("Failed to fetch data: \(error)")
             }
+        } catch {
+            print("Failed to fetch data: \(error)")
         }
+        return "main-image"
     }
-    /// Converte um nome no formato `Sleekeazy's Hair Potion` para `sleekeazy-s-hair-potion`
+
     private func convertToSlug(_ name: String) -> String {
-        // Define uma expressão regular para encontrar caracteres não alfanuméricos e não espaços
-        let regex = try! NSRegularExpression(pattern: "[^a-zA-Z0-9\\s]", options: [])
+        let regex = try! NSRegularExpression(pattern: "(?i)([a-z]+(?:\\s+[a-z]+)*)(?=\\s+em\\s+([a-z]+(?:-[a-z]+)*))", options: [])
         let range = NSRange(location: 0, length: name.utf16.count)
-        
-        // Remove caracteres especiais
+
         var slug = regex.stringByReplacingMatches(in: name, options: [], range: range, withTemplate: "")
-        
-        // Substitui espaços por hífens
+        print("Regex antes dos updates: \(slug)")
         slug = slug.replacingOccurrences(of: " ", with: "-")
-        
-        // Converte para minúsculas
-        slug = slug.lowercased()
-        
-        return slug
+        slug = slug.replacingOccurrences(of: "'", with: "-")
+
+
+        return slug.lowercased()
+    }
+}
+
+// Novo CardView para Potions
+struct PotionCardView: View {
+    let potion: Potion
+    @State var imageURL: (() -> String?)
+
+    var body: some View {
+        CardView(cardImage: "star.fill", imageURL: imageURL(), name: potion.name, subname: potion.effect ?? "No effect found")
     }
 }

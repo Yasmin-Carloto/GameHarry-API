@@ -7,9 +7,9 @@
 
 import Foundation
 
-class WikiViewModel: ObservableObject{
-    class PotionsViewModel: ObservableObject{
-        
+class WikiViewModel: ObservableObject {
+    class PotionsViewModel: ObservableObject {
+
         var isLoading: Bool = false
         
         func fetchPotions() async -> [Potion] {
