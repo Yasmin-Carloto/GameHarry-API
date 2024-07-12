@@ -34,7 +34,8 @@ struct LandingPage: View {
                 Text("Your year in Hogwarts")
                     .font(.cinzelDecorative(.bold))
                     .foregroundStyle(.roseEbony)
-                
+                    .frame(maxWidth: .infinity, alignment: .center)
+
                 NavigationLink(destination: ReviewPage(), label: {
                     Text("Começar")
                 })

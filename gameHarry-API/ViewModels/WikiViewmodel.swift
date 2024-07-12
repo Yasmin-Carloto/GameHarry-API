@@ -7,52 +7,61 @@
 
 import Foundation
 
-class WikiViewModel: ObservableObject {
-    class PotionsViewModel: ObservableObject {
+class WikiViewModel<T: Decodable & Identifiable>: ObservableObject {
+    @Published var items: [T] = []
+    @Published var potionsFromPotterDB: [Data] = []
 
-        var isLoading: Bool = false
-        
-        func fetchPotions() async -> [Potion] {
-            do {
-                let fetchedPotions: [Potion] = try await ApiServices.shared.fetchData(from: WizardWorldEndpoint.potions)
-                return fetchedPotions
-            } catch {
-                self.isLoading = false
-                print(error.localizedDescription)
-                return []
+
+    func loadData(from endpoint: Endpoint) async {
+        do {
+            let fetchedItems: [T] = try await ApiServices.shared.fetchData(from: endpoint)
+            DispatchQueue.main.async {
+                self.items = fetchedItems
             }
+
+            let fetchedPotionsDB: [Data] = try await ApiServices.shared.fetchAllPotions()
+            DispatchQueue.main.async {
+                self.potionsFromPotterDB = fetchedPotionsDB
+            }
+
+//            items = try await ApiServices.shared.fetchData(from: endpoint)
+//            potionsFromPotterDB = try await ApiServices.shared.fetchAllPotions()
+        } catch {
+            print("Error fetching data: \(error)")
         }
     }
-    
-    class SpellViewModel: ObservableObject{
-        
-        var isLoading: Bool = false
-        
-        func fetchSpells() async -> [Spell] {
-            do {
-                let fetchedSpells: [Spell] = try await ApiServices.shared.fetchData(from: WizardWorldEndpoint.spells)
-                return fetchedSpells
-            } catch {
-                self.isLoading = false
-                print(error.localizedDescription)
-                return []
-            }
+
+    func filteredItems(_ searchItem: String) -> [T] {
+        items.filter { item in
+            searchItem.isEmpty || String(describing: item).localizedCaseInsensitiveContains(searchItem)
         }
     }
-    
-    class WizardsViewModel:ObservableObject {
-        
-        var isLoading: Bool = false
-        
-        func fetchWizards() async -> [Wizard]{
-            do {
-                let fetchedWizards: [Wizard] = try await ApiServices.shared.fetchData(from: WizardWorldEndpoint.wizards)
-                return fetchedWizards
-            } catch {
-                self.isLoading = false
-                print(error.localizedDescription)
-                return []
+
+    func fetchPotionImage(_ itemName: String) async -> String {
+        let slug = convertToSlug(itemName)
+        for potion in potionsFromPotterDB {
+            if slug == potion.attributes.slug {
+                return potion.attributes.image ?? "empty-image-url"
             }
         }
+        return "empty-image-url"
+    }
+
+    private func convertToSlug(_ name: String) -> String {
+        let regex = try! NSRegularExpression(pattern: "(?i)([a-z]+(?:\\s+[a-z]+)*)(?=\\s+em\\s+([a-z]+(?:-[a-z]+)*))", 
+                                             options: [])
+        let range = NSRange(location: 0, length: name.utf16.count)
+        
+        var slug = regex.stringByReplacingMatches(in: name, options: [], range: range, withTemplate: "")
+
+        print("Regex antes dos updates: \(slug)")
+        slug = slug.replacingOccurrences(of: " ", with: "-")
+        slug = slug.replacingOccurrences(of: "'", with: "-")
+        return slug.lowercased()
+    }
+
+    func imageURL(for potion: Potion) -> String {
+        let slug = convertToSlug(potion.name)
+        return potionsFromPotterDB.first(where: {$0.attributes.slug == slug})?.attributes.image ?? "empty-image-URL"
     }
 }
