@@ -9,7 +9,7 @@ import Foundation
 
 class WikiViewModel<T: Decodable & Identifiable>: ObservableObject {
     @Published var items: [T] = []
-    @Published var potionsFromPotterDB: [Data] = []
+    @Published var potionsFromPotterDB: [ItemData] = []
 
 
     func loadData(from endpoint: Endpoint) async {
@@ -19,7 +19,7 @@ class WikiViewModel<T: Decodable & Identifiable>: ObservableObject {
                 self.items = fetchedItems
             }
 
-            let fetchedPotionsDB: [Data] = try await ApiServices.shared.fetchAllPotions()
+            let fetchedPotionsDB: [ItemData] = try await ApiServices.shared.fetchAllPotions()
             DispatchQueue.main.async {
                 self.potionsFromPotterDB = fetchedPotionsDB
             }

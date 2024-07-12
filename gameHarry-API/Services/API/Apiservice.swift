@@ -22,8 +22,8 @@ class ApiServices {
         return decodedData
     }
     
-    func fetchAllPotions() async throws -> [Data] {
-        var allPotions: [Data] = []
+    func fetchAllPotions() async throws -> [ItemData] {
+        var allPotions: [ItemData] = []
         var currentPage: Int = 1
         var totalPages: Int = 2
         

@@ -30,7 +30,7 @@ struct ReviewPage: View {
                         CardPotion(potion: potion)
                     }
                 }
-
+                // Atencao toda vez que usar o navigationLink, estao sendo criadas novas instancias
                 NavigationLink("Pular Revisão", destination: LandingPage().navigationBarBackButtonHidden())
                     .buttonStyle(PrimaryButton())
                     .frame(maxWidth: .infinity, alignment: .center)

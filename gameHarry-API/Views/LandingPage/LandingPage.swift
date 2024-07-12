@@ -35,8 +35,8 @@ struct LandingPage: View {
                     .font(.cinzelDecorative(.bold))
                     .foregroundStyle(.roseEbony)
                     .frame(maxWidth: .infinity, alignment: .center)
-
-                NavigationLink(destination: ReviewPage(), label: {
+                // Atencao toda vez que usar o navigationLink, estao sendo criadas novas instancias
+                NavigationLink(destination: TutorialPageView(), label: {
                     Text("Começar")
                 })
                 .buttonStyle(PrimaryButton())

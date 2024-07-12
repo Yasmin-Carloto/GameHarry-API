@@ -12,7 +12,7 @@ struct PotionCardView: View {
     let potion: Potion
     @StateObject private var viewModel = PotionImageViewModel()
 
-    var potionsFromPotterDB: [Data] // Passamos as poções carregadas do banco de dados
+    var potionsFromPotterDB: [ItemData] // Passamos as poções carregadas do banco de dados
 
     var body: some View {
             CardView(cardImage: "",
@@ -30,7 +30,7 @@ struct PotionCardView: View {
 class PotionImageViewModel: ObservableObject {
     @Published var imageURL: String = "default-image-url"
 
-    func fetchPotionImage(_ itemName: String, potionsFromPotterDB: [Data]) async {
+    func fetchPotionImage(_ itemName: String, potionsFromPotterDB: [ItemData]) async {
         let slug = convertToSlug(itemName)
         if let potion = potionsFromPotterDB.first(where: { $0.attributes.slug == slug }) {
             DispatchQueue.main.async {
@@ -60,7 +60,7 @@ class PotionImageViewModel: ObservableObject {
                                   effect: "Ages the user",
                                   ingredients: []),
                    potionsFromPotterDB: [
-                    Data(id: "",
+                    ItemData(id: "",
                          type: .potion,
                          attributes: .init(slug: "",
                                            characteristics: "",
