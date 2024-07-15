@@ -38,11 +38,7 @@ struct CardView: View {
                                        endPoint: .bottom)
                         
                     }
-                    VStack{
-                        Image(systemName: self.cardImage ?? "globe")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundStyle(Color.brown)
+                    VStack(alignment: .leading) {
                         Spacer()
                         Text(self.name)
                             .font(.cinzelDecorative(.bold, size: 16))

@@ -29,11 +29,10 @@ struct TextShimmer: View {
                     Rectangle()
                         .fill(Color.white)
                         .frame(width: animation ? UIScreen.main.bounds.width : 0, height: UIScreen.main.bounds.height)
-                    
                         .blur(radius: 12)
                         .rotationEffect(Angle(degrees: 70))
                         .offset(x: animation ? 0 : -UIScreen.main.bounds.width / 2)
-                        .animation(Animation.easeIn(duration: 4), value: animation)
+                        .animation(Animation.easeInOut(duration: 4), value: animation)
                 )
                 .onAppear {
                     withAnimation {
