@@ -17,16 +17,16 @@ struct CardView: View {
                 .frame(width: 170, height: 170)
                 .overlay{
                     ZStack{
-                        Image(systemName: self.cardImage ?? "globe")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .foregroundStyle(Color.brown)
-                        LinearGradient(gradient: Gradient(colors: [Color.roseEbony.opacity(0.7), Color.red.opacity(0.7), Color.black]),
+                        LinearGradient(gradient: Gradient(colors: [Color.roseEbony.opacity(0.7), Color.black]),
                                        startPoint: .top,
                                        endPoint: .bottom)
                         
                     }
                     VStack{
+                        Image(systemName: self.cardImage ?? "globe")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundStyle(Color.brown)
                         Spacer()
                         Text(self.name)
                             .frame(maxWidth: .infinity, alignment: .leading)
