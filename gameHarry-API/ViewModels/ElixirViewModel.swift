@@ -22,6 +22,18 @@ class ElixirViewModel {
         }
     }
     
+    func fetchElixir() async -> Potion? {
+        do {
+            let fetchedElixirs: [Potion] = try await ApiServices.shared.fetchData(from: WizardWorldEndpoint.potions)
+            let filteredElixirs = filterElixirs(elixirs: fetchedElixirs)
+            return filteredElixirs.shuffled().first
+        } catch {
+            self.isLoading = false
+            print(error.localizedDescription)
+            return nil
+        }
+    }
+    
     private func filterElixirs(elixirs: [Potion]) -> [Potion]{
         var filteredElixirs: [Potion] = []
         
