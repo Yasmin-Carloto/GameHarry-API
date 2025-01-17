@@ -11,9 +11,12 @@
 		3F23E0182C3D5B8200EBC68D /* ReviewTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E0172C3D5B8200EBC68D /* ReviewTimer.swift */; };
 		3F23E01A2C3D7F6100EBC68D /* CardPotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E0192C3D7F6100EBC68D /* CardPotion.swift */; };
 		3F23E01C2C3D7FAC00EBC68D /* CardIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E01B2C3D7FAC00EBC68D /* CardIngredient.swift */; };
+		3F5482CB2C400C6C00DD9020 /* GamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5482CA2C400C6C00DD9020 /* GamePage.swift */; };
+		3F5482CF2C40226400DD9020 /* UTType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5482CE2C40226400DD9020 /* UTType+Extension.swift */; };
 		3F63E8002C3EAA6C00A500BA /* ElixirViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63E7FF2C3EAA6C00A500BA /* ElixirViewModel.swift */; };
+		3F7B40BE2C402CFF0063312C /* IngredientsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B40BD2C402CFF0063312C /* IngredientsContainer.swift */; };
 		3FC81FD92C3DB9CE00BF2803 /* Potion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC81FD82C3DB9CE00BF2803 /* Potion.swift */; };
-		3FC81FDB2C3DBE0C00BF2803 /* IngridientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC81FDA2C3DBE0C00BF2803 /* IngridientModel.swift */; };
+		3FC81FDB2C3DBE0C00BF2803 /* IngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC81FDA2C3DBE0C00BF2803 /* IngredientModel.swift */; };
 		B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */; };
 		B214ACF92C35740200A362EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B214ACF82C35740200A362EB /* Assets.xcassets */; };
 		B214ACFC2C35740200A362EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B214ACFB2C35740200A362EB /* Preview Assets.xcassets */; };
@@ -88,9 +91,12 @@
 		3F23E0172C3D5B8200EBC68D /* ReviewTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTimer.swift; sourceTree = "<group>"; };
 		3F23E0192C3D7F6100EBC68D /* CardPotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPotion.swift; sourceTree = "<group>"; };
 		3F23E01B2C3D7FAC00EBC68D /* CardIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIngredient.swift; sourceTree = "<group>"; };
+		3F5482CA2C400C6C00DD9020 /* GamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GamePage.swift; path = "../../../../GameHarry-Pocs/GamePageHP/GamePage.swift"; sourceTree = "<group>"; };
+		3F5482CE2C40226400DD9020 /* UTType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UTType+Extension.swift"; sourceTree = "<group>"; };
 		3F63E7FF2C3EAA6C00A500BA /* ElixirViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixirViewModel.swift; sourceTree = "<group>"; };
+		3F7B40BD2C402CFF0063312C /* IngredientsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsContainer.swift; sourceTree = "<group>"; };
 		3FC81FD82C3DB9CE00BF2803 /* Potion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potion.swift; sourceTree = "<group>"; };
-		3FC81FDA2C3DBE0C00BF2803 /* IngridientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngridientModel.swift; sourceTree = "<group>"; };
+		3FC81FDA2C3DBE0C00BF2803 /* IngredientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModel.swift; sourceTree = "<group>"; };
 		B214ACF12C35740100A362EB /* gameHarry-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gameHarry-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameHarry_APIApp.swift; sourceTree = "<group>"; };
 		B214ACF82C35740200A362EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,6 +197,15 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		3F5482C92C400C4000DD9020 /* GamePage */ = {
+			isa = PBXGroup;
+			children = (
+				3F5482CA2C400C6C00DD9020 /* GamePage.swift */,
+				3F7B40BD2C402CFF0063312C /* IngredientsContainer.swift */,
+			);
+			path = GamePage;
+			sourceTree = "<group>";
+		};
 		B214ACE82C35740100A362EB = {
 			isa = PBXGroup;
 			children = (
@@ -265,7 +280,7 @@
 			children = (
 				B23C2BF52C40160A00CD2A35 /* Tutorial Review Page */,
 				B23C2BEF2C4000BF00CD2A35 /* Game Status Page */,
-				B23C2BE82C3FF12800CD2A35 /* GamePage */,
+				3F5482C92C400C4000DD9020 /* GamePage */,
 				3F23E0132C3D58EF00EBC68D /* ReviewPage */,
 				CE3228062C382D9100F3E8D8 /* WikiPage */,
 				CEE89F5F2C36E5A4005615B6 /* WelcomePage */,
@@ -412,6 +427,7 @@
 				CEE89F692C36F62F005615B6 /* View+Extension.swift */,
 				CEE89F612C36E603005615B6 /* String+Extension.swift */,
 				CEE89F772C36FBE6005615B6 /* Font+Extension.swift */,
+				3F5482CE2C40226400DD9020 /* UTType+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -455,7 +471,7 @@
 				B2BDD10F2C3DB86C00474C6A /* WizardModel.swift */,
 				B2C4E0502C3EA59600065304 /* PotionsModel.swift */,
 				3FC81FD82C3DB9CE00BF2803 /* Potion.swift */,
-				3FC81FDA2C3DBE0C00BF2803 /* IngridientModel.swift */,
+				3FC81FDA2C3DBE0C00BF2803 /* IngredientModel.swift */,
 				B23C2BF12C4001BD00CD2A35 /* SnapeModel.swift */,
 			);
 			path = Models;
@@ -648,7 +664,7 @@
 				3FC81FD92C3DB9CE00BF2803 /* Potion.swift in Sources */,
 				CE32280E2C3C0A7400F3E8D8 /* PrimaryButton.swift in Sources */,
 				CE853AFB2C3C1AFA008CF20B /* TextShimmer.swift in Sources */,
-				3FC81FDB2C3DBE0C00BF2803 /* IngridientModel.swift in Sources */,
+				3FC81FDB2C3DBE0C00BF2803 /* IngredientModel.swift in Sources */,
 				CE32280C2C3C099D00F3E8D8 /* WikiPageFactory.swift in Sources */,
 				B2C4E0512C3EA59600065304 /* PotionsModel.swift in Sources */,
 				B23C2BF72C40161D00CD2A35 /* TutorialReviewView.swift in Sources */,
@@ -657,6 +673,7 @@
 				B23C2BF22C4001BD00CD2A35 /* SnapeModel.swift in Sources */,
 				B23C2BED2C3FFDF200CD2A35 /* CauldronView.swift in Sources */,
 				CEE89F782C36FBE6005615B6 /* Font+Extension.swift in Sources */,
+				3F7B40BE2C402CFF0063312C /* IngredientsContainer.swift in Sources */,
 				B214AD202C357BE700A362EB /* Apiservice.swift in Sources */,
 				CEE89F652C36E6C1005615B6 /* HouseModel.swift in Sources */,
 				CE853AFF2C3C1C0B008CF20B /* Text+Extension.swift in Sources */,
@@ -664,10 +681,12 @@
 				CE853AFD2C3C1BD2008CF20B /* RoundedImage.swift in Sources */,
 				B23C2BEB2C3FF14D00CD2A35 /* CardIngredientView.swift in Sources */,
 				B214AD342C35931300A362EB /* SettingsPage.swift in Sources */,
+				3F5482CB2C400C6C00DD9020 /* GamePage.swift in Sources */,
 				B2B6591B2C3C250C00682D91 /* SearchBar.swift in Sources */,
 				B23C2BF42C40035C00CD2A35 /* SnapeView.swift in Sources */,
 				B23C2BFE2C401FDF00CD2A35 /* DropZoneView.swift in Sources */,
 				B2C4E0532C3EB52A00065304 /* CardView.swift in Sources */,
+				3F5482CF2C40226400DD9020 /* UTType+Extension.swift in Sources */,
 				CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
