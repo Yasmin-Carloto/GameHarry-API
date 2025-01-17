@@ -12,6 +12,8 @@ struct ReviewPage: View {
     @State private var timer: Timer? = nil
     private var upperBound: Int = 30
     private var viewModel: ElixirViewModel = ElixirViewModel()
+    var mockPotion = Potion(id: "1", name: "Age Potion", difficulty: "High", effect: nil, ingredients: [Ingredients(id: "1", name: "Banana"), Ingredients(id: "2", name: "Strawberry")])
+
     
     @State private var potions: [Potion] = []
 
@@ -31,7 +33,7 @@ struct ReviewPage: View {
                     }
                 }
 
-                NavigationLink("Pular Revisão", destination: LandingPage().navigationBarBackButtonHidden())
+                NavigationLink("Pular Revisão", destination: GamePage(potion: mockPotion) .navigationBarBackButtonHidden())
                     .buttonStyle(PrimaryButton())
                     .frame(maxWidth: .infinity, alignment: .center)
                     

@@ -16,7 +16,7 @@ struct DropZoneView: View {
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8){
                 ForEach(numbers, id: \.self) { item in
                     RoundedRectangle(cornerRadius: 10)
-                        .frame(width: 40, height: 40)
+                        .frame(width: 100, height: 40)
                         .overlay{
                             ZStack{
                                 LinearGradient(gradient: Gradient(colors: [Color.roseEbony.opacity(0.7), Color.black]),
@@ -32,7 +32,7 @@ struct DropZoneView: View {
                             }
                         }
                 }
-            }
+            }.cornerRadius(10)
             .frame(width: 100.0)
         }
     }
