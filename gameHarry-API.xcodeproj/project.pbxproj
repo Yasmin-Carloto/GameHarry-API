@@ -11,7 +11,6 @@
 		3F23E0182C3D5B8200EBC68D /* ReviewTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E0172C3D5B8200EBC68D /* ReviewTimer.swift */; };
 		3F23E01A2C3D7F6100EBC68D /* CardPotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E0192C3D7F6100EBC68D /* CardPotion.swift */; };
 		3F23E01C2C3D7FAC00EBC68D /* CardIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E01B2C3D7FAC00EBC68D /* CardIngredient.swift */; };
-		3F5482CB2C400C6C00DD9020 /* GamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5482CA2C400C6C00DD9020 /* GamePage.swift */; };
 		3F5482CF2C40226400DD9020 /* UTType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5482CE2C40226400DD9020 /* UTType+Extension.swift */; };
 		3F63E8002C3EAA6C00A500BA /* ElixirViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63E7FF2C3EAA6C00A500BA /* ElixirViewModel.swift */; };
 		3F7B40BE2C402CFF0063312C /* IngredientsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B40BD2C402CFF0063312C /* IngredientsContainer.swift */; };
@@ -26,14 +25,11 @@
 		B214AD202C357BE700A362EB /* Apiservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD1F2C357BE700A362EB /* Apiservice.swift */; };
 		B214AD302C35903800A362EB /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD2F2C35903800A362EB /* WelcomePage.swift */; };
 		B214AD342C35931300A362EB /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD332C35931300A362EB /* SettingsPage.swift */; };
-		B23C2BEB2C3FF14D00CD2A35 /* CardIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BEA2C3FF14D00CD2A35 /* CardIngredientView.swift */; };
-		B23C2BED2C3FFDF200CD2A35 /* CauldronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BEC2C3FFDF200CD2A35 /* CauldronView.swift */; };
 		B23C2BF22C4001BD00CD2A35 /* SnapeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BF12C4001BD00CD2A35 /* SnapeModel.swift */; };
 		B23C2BF42C40035C00CD2A35 /* SnapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BF32C40035C00CD2A35 /* SnapeView.swift */; };
 		B23C2BF72C40161D00CD2A35 /* TutorialReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BF62C40161D00CD2A35 /* TutorialReviewView.swift */; };
 		B23C2BF92C401C4200CD2A35 /* TutorialPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BF82C401C4200CD2A35 /* TutorialPageView.swift */; };
 		B23C2BFC2C401E1F00CD2A35 /* GameStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BFB2C401E1F00CD2A35 /* GameStatusView.swift */; };
-		B23C2BFE2C401FDF00CD2A35 /* DropZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BFD2C401FDF00CD2A35 /* DropZoneView.swift */; };
 		B23C2C002C402B4E00CD2A35 /* CauldronStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BFF2C402B4E00CD2A35 /* CauldronStatusView.swift */; };
 		B23C2C032C4030BC00CD2A35 /* SnapeQuotes.json in Resources */ = {isa = PBXBuildFile; fileRef = B23C2C022C4030BC00CD2A35 /* SnapeQuotes.json */; };
 		B23C2C052C4030E300CD2A35 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2C042C4030E300CD2A35 /* StatusViewModel.swift */; };
@@ -41,6 +37,10 @@
 		B2BDD10A2C3D7CA300474C6A /* WikiViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDD1092C3D7CA300474C6A /* WikiViewmodel.swift */; };
 		B2BDD10E2C3DB85100474C6A /* SpellsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDD10D2C3DB85100474C6A /* SpellsModel.swift */; };
 		B2BDD1102C3DB86C00474C6A /* WizardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDD10F2C3DB86C00474C6A /* WizardModel.swift */; };
+		B2C025E02D3AAC850007B27B /* CauldronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C025DD2D3AAC850007B27B /* CauldronView.swift */; };
+		B2C025E12D3AAC850007B27B /* DropZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C025DE2D3AAC850007B27B /* DropZoneView.swift */; };
+		B2C025E22D3AAC850007B27B /* CardIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C025DC2D3AAC850007B27B /* CardIngredientView.swift */; };
+		B2C025E42D3AAD8C0007B27B /* GamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C025E32D3AAD8C0007B27B /* GamePage.swift */; };
 		B2C4E0512C3EA59600065304 /* PotionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C4E0502C3EA59600065304 /* PotionsModel.swift */; };
 		B2C4E0532C3EB52A00065304 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C4E0522C3EB52A00065304 /* CardView.swift */; };
 		CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */; };
@@ -91,7 +91,6 @@
 		3F23E0172C3D5B8200EBC68D /* ReviewTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTimer.swift; sourceTree = "<group>"; };
 		3F23E0192C3D7F6100EBC68D /* CardPotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPotion.swift; sourceTree = "<group>"; };
 		3F23E01B2C3D7FAC00EBC68D /* CardIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIngredient.swift; sourceTree = "<group>"; };
-		3F5482CA2C400C6C00DD9020 /* GamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GamePage.swift; path = "../../../../GameHarry-Pocs/GamePageHP/GamePage.swift"; sourceTree = "<group>"; };
 		3F5482CE2C40226400DD9020 /* UTType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UTType+Extension.swift"; sourceTree = "<group>"; };
 		3F63E7FF2C3EAA6C00A500BA /* ElixirViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixirViewModel.swift; sourceTree = "<group>"; };
 		3F7B40BD2C402CFF0063312C /* IngredientsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsContainer.swift; sourceTree = "<group>"; };
@@ -124,6 +123,10 @@
 		B2BDD1092C3D7CA300474C6A /* WikiViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewmodel.swift; sourceTree = "<group>"; };
 		B2BDD10D2C3DB85100474C6A /* SpellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsModel.swift; sourceTree = "<group>"; };
 		B2BDD10F2C3DB86C00474C6A /* WizardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardModel.swift; sourceTree = "<group>"; };
+		B2C025DC2D3AAC850007B27B /* CardIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIngredientView.swift; sourceTree = "<group>"; };
+		B2C025DD2D3AAC850007B27B /* CauldronView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauldronView.swift; sourceTree = "<group>"; };
+		B2C025DE2D3AAC850007B27B /* DropZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneView.swift; sourceTree = "<group>"; };
+		B2C025E32D3AAD8C0007B27B /* GamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePage.swift; sourceTree = "<group>"; };
 		B2C4E0502C3EA59600065304 /* PotionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsModel.swift; sourceTree = "<group>"; };
 		B2C4E0522C3EB52A00065304 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewmodel.swift; sourceTree = "<group>"; };
@@ -200,7 +203,8 @@
 		3F5482C92C400C4000DD9020 /* GamePage */ = {
 			isa = PBXGroup;
 			children = (
-				3F5482CA2C400C6C00DD9020 /* GamePage.swift */,
+				B2C025DF2D3AAC850007B27B /* Components */,
+				B2C025E32D3AAD8C0007B27B /* GamePage.swift */,
 				3F7B40BD2C402CFF0063312C /* IngredientsContainer.swift */,
 			);
 			path = GamePage;
@@ -214,6 +218,7 @@
 				B214AD042C35740300A362EB /* gameHarry-APITests */,
 				B214AD0E2C35740300A362EB /* gameHarry-APIUITests */,
 				B214ACF22C35740100A362EB /* Products */,
+				B2C025D32D3AAB7C0007B27B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -301,24 +306,6 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		B23C2BE82C3FF12800CD2A35 /* GamePage */ = {
-			isa = PBXGroup;
-			children = (
-				B23C2BE92C3FF12D00CD2A35 /* Components */,
-			);
-			path = GamePage;
-			sourceTree = "<group>";
-		};
-		B23C2BE92C3FF12D00CD2A35 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				B23C2BEA2C3FF14D00CD2A35 /* CardIngredientView.swift */,
-				B23C2BEC2C3FFDF200CD2A35 /* CauldronView.swift */,
-				B23C2BFD2C401FDF00CD2A35 /* DropZoneView.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
 		B23C2BEF2C4000BF00CD2A35 /* Game Status Page */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +339,26 @@
 				B23C2C022C4030BC00CD2A35 /* SnapeQuotes.json */,
 			);
 			path = json;
+			sourceTree = "<group>";
+		};
+		B2C025D32D3AAB7C0007B27B /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				B23C2BEC2C3FFDF200CD2A35 /* CauldronView.swift */,
+				B23C2BEA2C3FF14D00CD2A35 /* CardIngredientView.swift */,
+				B23C2BFD2C401FDF00CD2A35 /* DropZoneView.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		B2C025DF2D3AAC850007B27B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B2C025DC2D3AAC850007B27B /* CardIngredientView.swift */,
+				B2C025DD2D3AAC850007B27B /* CauldronView.swift */,
+				B2C025DE2D3AAC850007B27B /* DropZoneView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		CE3228062C382D9100F3E8D8 /* WikiPage */ = {
@@ -670,8 +677,10 @@
 				B23C2BF72C40161D00CD2A35 /* TutorialReviewView.swift in Sources */,
 				CEE89F6A2C36F62F005615B6 /* View+Extension.swift in Sources */,
 				B23C2C002C402B4E00CD2A35 /* CauldronStatusView.swift in Sources */,
+				B2C025E02D3AAC850007B27B /* CauldronView.swift in Sources */,
+				B2C025E12D3AAC850007B27B /* DropZoneView.swift in Sources */,
+				B2C025E22D3AAC850007B27B /* CardIngredientView.swift in Sources */,
 				B23C2BF22C4001BD00CD2A35 /* SnapeModel.swift in Sources */,
-				B23C2BED2C3FFDF200CD2A35 /* CauldronView.swift in Sources */,
 				CEE89F782C36FBE6005615B6 /* Font+Extension.swift in Sources */,
 				3F7B40BE2C402CFF0063312C /* IngredientsContainer.swift in Sources */,
 				B214AD202C357BE700A362EB /* Apiservice.swift in Sources */,
@@ -679,12 +688,10 @@
 				CE853AFF2C3C1C0B008CF20B /* Text+Extension.swift in Sources */,
 				B2BDD1102C3DB86C00474C6A /* WizardModel.swift in Sources */,
 				CE853AFD2C3C1BD2008CF20B /* RoundedImage.swift in Sources */,
-				B23C2BEB2C3FF14D00CD2A35 /* CardIngredientView.swift in Sources */,
 				B214AD342C35931300A362EB /* SettingsPage.swift in Sources */,
-				3F5482CB2C400C6C00DD9020 /* GamePage.swift in Sources */,
 				B2B6591B2C3C250C00682D91 /* SearchBar.swift in Sources */,
 				B23C2BF42C40035C00CD2A35 /* SnapeView.swift in Sources */,
-				B23C2BFE2C401FDF00CD2A35 /* DropZoneView.swift in Sources */,
+				B2C025E42D3AAD8C0007B27B /* GamePage.swift in Sources */,
 				B2C4E0532C3EB52A00065304 /* CardView.swift in Sources */,
 				3F5482CF2C40226400DD9020 /* UTType+Extension.swift in Sources */,
 				CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */,
@@ -851,7 +858,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gameHarry-API/Preview Content\"";
-				DEVELOPMENT_TEAM = 44U668YQTW;
+				DEVELOPMENT_TEAM = 9C97S2SR7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "gameHarry-API/Info.plist";
@@ -882,7 +889,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gameHarry-API/Preview Content\"";
-				DEVELOPMENT_TEAM = 44U668YQTW;
+				DEVELOPMENT_TEAM = 9C97S2SR7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "gameHarry-API/Info.plist";
