@@ -16,6 +16,7 @@
 		3F7B40BE2C402CFF0063312C /* IngredientsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B40BD2C402CFF0063312C /* IngredientsContainer.swift */; };
 		3FC81FD92C3DB9CE00BF2803 /* Potion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC81FD82C3DB9CE00BF2803 /* Potion.swift */; };
 		3FC81FDB2C3DBE0C00BF2803 /* IngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC81FDA2C3DBE0C00BF2803 /* IngredientModel.swift */; };
+		7E8F38BE2C40BC2E00A6E479 /* PotionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F38BD2C40BC2E00A6E479 /* PotionCardView.swift */; };
 		B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */; };
 		B214ACF92C35740200A362EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B214ACF82C35740200A362EB /* Assets.xcassets */; };
 		B214ACFC2C35740200A362EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B214ACFB2C35740200A362EB /* Preview Assets.xcassets */; };
@@ -41,12 +42,14 @@
 		B2C025E12D3AAC850007B27B /* DropZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C025DE2D3AAC850007B27B /* DropZoneView.swift */; };
 		B2C025E22D3AAC850007B27B /* CardIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C025DC2D3AAC850007B27B /* CardIngredientView.swift */; };
 		B2C025E42D3AAD8C0007B27B /* GamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C025E32D3AAD8C0007B27B /* GamePage.swift */; };
-		B2C4E0512C3EA59600065304 /* PotionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C4E0502C3EA59600065304 /* PotionsModel.swift */; };
 		B2C4E0532C3EB52A00065304 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C4E0522C3EB52A00065304 /* CardView.swift */; };
 		CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */; };
 		CE3228082C382DA800F3E8D8 /* WikiPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3228072C382DA800F3E8D8 /* WikiPage.swift */; };
 		CE32280C2C3C099D00F3E8D8 /* WikiPageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32280B2C3C099D00F3E8D8 /* WikiPageFactory.swift */; };
 		CE32280E2C3C0A7400F3E8D8 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32280D2C3C0A7400F3E8D8 /* PrimaryButton.swift */; };
+		CE4D869A2C3EF1EC0000CB49 /* CauldronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D86992C3EF1EC0000CB49 /* CauldronView.swift */; };
+		CE4D869C2C4023AE0000CB49 /* PotterDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D869B2C4023AE0000CB49 /* PotterDBModel.swift */; };
+		CE4D869E2C4024400000CB49 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D869D2C4024400000CB49 /* URLImage.swift */; };
 		CE853AFB2C3C1AFA008CF20B /* TextShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE853AFA2C3C1AFA008CF20B /* TextShimmer.swift */; };
 		CE853AFD2C3C1BD2008CF20B /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE853AFC2C3C1BD2008CF20B /* RoundedImage.swift */; };
 		CE853AFF2C3C1C0B008CF20B /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE853AFE2C3C1C0B008CF20B /* Text+Extension.swift */; };
@@ -96,6 +99,7 @@
 		3F7B40BD2C402CFF0063312C /* IngredientsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsContainer.swift; sourceTree = "<group>"; };
 		3FC81FD82C3DB9CE00BF2803 /* Potion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potion.swift; sourceTree = "<group>"; };
 		3FC81FDA2C3DBE0C00BF2803 /* IngredientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModel.swift; sourceTree = "<group>"; };
+		7E8F38BD2C40BC2E00A6E479 /* PotionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionCardView.swift; sourceTree = "<group>"; };
 		B214ACF12C35740100A362EB /* gameHarry-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gameHarry-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameHarry_APIApp.swift; sourceTree = "<group>"; };
 		B214ACF82C35740200A362EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,12 +131,14 @@
 		B2C025DD2D3AAC850007B27B /* CauldronView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauldronView.swift; sourceTree = "<group>"; };
 		B2C025DE2D3AAC850007B27B /* DropZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneView.swift; sourceTree = "<group>"; };
 		B2C025E32D3AAD8C0007B27B /* GamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePage.swift; sourceTree = "<group>"; };
-		B2C4E0502C3EA59600065304 /* PotionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsModel.swift; sourceTree = "<group>"; };
 		B2C4E0522C3EB52A00065304 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewmodel.swift; sourceTree = "<group>"; };
 		CE3228072C382DA800F3E8D8 /* WikiPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiPage.swift; sourceTree = "<group>"; };
 		CE32280B2C3C099D00F3E8D8 /* WikiPageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiPageFactory.swift; sourceTree = "<group>"; };
 		CE32280D2C3C0A7400F3E8D8 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		CE4D86992C3EF1EC0000CB49 /* CauldronView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauldronView.swift; sourceTree = "<group>"; };
+		CE4D869B2C4023AE0000CB49 /* PotterDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotterDBModel.swift; sourceTree = "<group>"; };
+		CE4D869D2C4024400000CB49 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 		CE853AFA2C3C1AFA008CF20B /* TextShimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextShimmer.swift; sourceTree = "<group>"; };
 		CE853AFC2C3C1BD2008CF20B /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		CE853AFE2C3C1C0B008CF20B /* Text+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
@@ -291,6 +297,7 @@
 				CEE89F5F2C36E5A4005615B6 /* WelcomePage */,
 				B214AD332C35931300A362EB /* SettingsPage.swift */,
 				CEE89F672C36F550005615B6 /* LandingPage */,
+				CE4D869F2C40244F0000CB49 /* Helpers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -375,6 +382,7 @@
 			children = (
 				B2B6591A2C3C250C00682D91 /* SearchBar.swift */,
 				B2C4E0522C3EB52A00065304 /* CardView.swift */,
+				7E8F38BD2C40BC2E00A6E479 /* PotionCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -385,6 +393,22 @@
 				CE32280B2C3C099D00F3E8D8 /* WikiPageFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		CE4D86982C3EF1D60000CB49 /* Cauldron */ = {
+			isa = PBXGroup;
+			children = (
+				CE4D86992C3EF1EC0000CB49 /* CauldronView.swift */,
+			);
+			path = Cauldron;
+			sourceTree = "<group>";
+		};
+		CE4D869F2C40244F0000CB49 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CE4D869D2C4024400000CB49 /* URLImage.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		CEC3215A2C36D79200941979 /* Resources */ = {
@@ -442,6 +466,7 @@
 		CEE89F5D2C36E50E005615B6 /* GeneralComponents */ = {
 			isa = PBXGroup;
 			children = (
+				CE4D86982C3EF1D60000CB49 /* Cauldron */,
 			);
 			path = GeneralComponents;
 			sourceTree = "<group>";
@@ -476,10 +501,10 @@
 				CEE89F642C36E6C1005615B6 /* HouseModel.swift */,
 				B2BDD10D2C3DB85100474C6A /* SpellsModel.swift */,
 				B2BDD10F2C3DB86C00474C6A /* WizardModel.swift */,
-				B2C4E0502C3EA59600065304 /* PotionsModel.swift */,
 				3FC81FD82C3DB9CE00BF2803 /* Potion.swift */,
 				3FC81FDA2C3DBE0C00BF2803 /* IngredientModel.swift */,
 				B23C2BF12C4001BD00CD2A35 /* SnapeModel.swift */,
+				CE4D869B2C4023AE0000CB49 /* PotterDBModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -664,8 +689,10 @@
 				3F23E0152C3D590700EBC68D /* ReviewPage.swift in Sources */,
 				CEC321592C36CFFB00941979 /* LandingPage.swift in Sources */,
 				B23C2BF92C401C4200CD2A35 /* TutorialPageView.swift in Sources */,
+				CE4D869E2C4024400000CB49 /* URLImage.swift in Sources */,
 				3F23E0182C3D5B8200EBC68D /* ReviewTimer.swift in Sources */,
 				B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */,
+				CE4D869C2C4023AE0000CB49 /* PotterDBModel.swift in Sources */,
 				B23C2C052C4030E300CD2A35 /* StatusViewModel.swift in Sources */,
 				3F63E8002C3EAA6C00A500BA /* ElixirViewModel.swift in Sources */,
 				3FC81FD92C3DB9CE00BF2803 /* Potion.swift in Sources */,
@@ -674,7 +701,6 @@
 				3FC81FDB2C3DBE0C00BF2803 /* IngredientModel.swift in Sources */,
 				CE32280C2C3C099D00F3E8D8 /* WikiPageFactory.swift in Sources */,
 				B2C4E0512C3EA59600065304 /* PotionsModel.swift in Sources */,
-				B23C2BF72C40161D00CD2A35 /* TutorialReviewView.swift in Sources */,
 				CEE89F6A2C36F62F005615B6 /* View+Extension.swift in Sources */,
 				B23C2C002C402B4E00CD2A35 /* CauldronStatusView.swift in Sources */,
 				B2C025E02D3AAC850007B27B /* CauldronView.swift in Sources */,
@@ -688,10 +714,12 @@
 				CE853AFF2C3C1C0B008CF20B /* Text+Extension.swift in Sources */,
 				B2BDD1102C3DB86C00474C6A /* WizardModel.swift in Sources */,
 				CE853AFD2C3C1BD2008CF20B /* RoundedImage.swift in Sources */,
+				CE4D869A2C3EF1EC0000CB49 /* CauldronView.swift in Sources */,
 				B214AD342C35931300A362EB /* SettingsPage.swift in Sources */,
 				B2B6591B2C3C250C00682D91 /* SearchBar.swift in Sources */,
 				B23C2BF42C40035C00CD2A35 /* SnapeView.swift in Sources */,
 				B2C025E42D3AAD8C0007B27B /* GamePage.swift in Sources */,
+				7E8F38BE2C40BC2E00A6E479 /* PotionCardView.swift in Sources */,
 				B2C4E0532C3EB52A00065304 /* CardView.swift in Sources */,
 				3F5482CF2C40226400DD9020 /* UTType+Extension.swift in Sources */,
 				CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */,

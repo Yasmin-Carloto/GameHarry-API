@@ -19,7 +19,7 @@ struct SearchBar: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 //.frame(width: 360, height: 40)
                 .cornerRadius(12)
-                //paddings
+                .preferredColorScheme(.light)//paddings
         }
         .padding(2)
     }

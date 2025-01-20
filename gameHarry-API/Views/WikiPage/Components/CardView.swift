@@ -9,41 +9,57 @@ import SwiftUI
 
 struct CardView: View {
     let cardImage: String?
+    var imageURL: String?
     let name, subname: String
     
     var body: some View {
-        VStack(alignment: .leading){
+        VStack(alignment: .leading) {
             RoundedRectangle(cornerRadius: 10)
-                .frame(width: 170, height: 170)
-                .overlay{
+                .aspectRatio(contentMode: .fit)
+                .overlay {
                     ZStack{
-                        LinearGradient(gradient: Gradient(colors: [Color.roseEbony.opacity(0.7), Color.black]),
+                        if let imageUrl = imageURL, !imageUrl.isEmpty {
+                            // Se imageURL estiver presente, não for vazio e não for "null", use URLImage
+                            URLImage(url: imageUrl)
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundStyle(Color.brown) // Aplica cor de primeiro plano, se necessário
+                                .clipped() // Corta a imagem para se ajustar ao contêiner
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+                        } else {
+                            // Caso contrário, use uma imagem de sistema padrão
+                            Image(systemName: cardImage ?? "globe")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundStyle(Color.brown) // Aplica cor de primeiro plano, se necessário
+                        }
+                        LinearGradient(gradient: Gradient(colors: [Color.roseEbony.opacity(0.2), Color.red.opacity(0.6), Color.black]),
                                        startPoint: .top,
                                        endPoint: .bottom)
                         
                     }
-                    VStack{
-                        Image(systemName: self.cardImage ?? "globe")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundStyle(Color.brown)
+                    VStack(alignment: .leading) {
                         Spacer()
                         Text(self.name)
-                            .frame(maxWidth: .infinity, alignment: .leading)
                             .font(.cinzelDecorative(.bold, size: 16))
+                            .lineLimit(2)
                             .foregroundStyle(Color.white)
-                            .truncationMode(.tail)
-                        
+                            .padding([.leading], 6)
+
                         Text(self.subname)
                             .foregroundStyle(Color.white)
-                            .font(.cinzelDecorative(.regular,size: 16))
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .lineLimit(2)
+                            .font(.cinzelDecorative(.regular,size: 14))
+                            .padding([.leading,.bottom], 6)
                             .truncationMode(.tail)
                     }
-                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
                 }
                 .cornerRadius(12)
         }
+        .frame(alignment:.leading)
+        .shadow(color: .roseEbony, radius: 6, x: 1, y: 2)
     }
 }
 
