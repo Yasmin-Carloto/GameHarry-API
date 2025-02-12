@@ -1,2 +1,0 @@
-// settings view
-import Foundation

@@ -7,16 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F23E0152C3D590700EBC68D /* ReviewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E0142C3D590700EBC68D /* ReviewPage.swift */; };
+		3F23E0182C3D5B8200EBC68D /* ReviewTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E0172C3D5B8200EBC68D /* ReviewTimer.swift */; };
+		3F23E01A2C3D7F6100EBC68D /* CardPotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E0192C3D7F6100EBC68D /* CardPotion.swift */; };
+		3F23E01C2C3D7FAC00EBC68D /* CardIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23E01B2C3D7FAC00EBC68D /* CardIngredient.swift */; };
+		3F5482CF2C40226400DD9020 /* UTType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5482CE2C40226400DD9020 /* UTType+Extension.swift */; };
+		3F63E8002C3EAA6C00A500BA /* ElixirViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63E7FF2C3EAA6C00A500BA /* ElixirViewModel.swift */; };
+		3F7B40BE2C402CFF0063312C /* IngredientsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B40BD2C402CFF0063312C /* IngredientsContainer.swift */; };
+		3FC81FD92C3DB9CE00BF2803 /* Potion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC81FD82C3DB9CE00BF2803 /* Potion.swift */; };
+		3FC81FDB2C3DBE0C00BF2803 /* IngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC81FDA2C3DBE0C00BF2803 /* IngredientModel.swift */; };
 		B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */; };
 		B214ACF92C35740200A362EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B214ACF82C35740200A362EB /* Assets.xcassets */; };
 		B214ACFC2C35740200A362EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B214ACFB2C35740200A362EB /* Preview Assets.xcassets */; };
 		B214AD062C35740300A362EB /* gameHarry_APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD052C35740300A362EB /* gameHarry_APITests.swift */; };
 		B214AD102C35740300A362EB /* gameHarry_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD0F2C35740300A362EB /* gameHarry_APIUITests.swift */; };
 		B214AD122C35740300A362EB /* gameHarry_APIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD112C35740300A362EB /* gameHarry_APIUITestsLaunchTests.swift */; };
-		B214AD202C357BE700A362EB /* apiservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD1F2C357BE700A362EB /* apiservice.swift */; };
+		B214AD202C357BE700A362EB /* Apiservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD1F2C357BE700A362EB /* Apiservice.swift */; };
 		B214AD302C35903800A362EB /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD2F2C35903800A362EB /* WelcomePage.swift */; };
 		B214AD342C35931300A362EB /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD332C35931300A362EB /* SettingsPage.swift */; };
-		B214AD362C35987A00A362EB /* settingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214AD352C35987A00A362EB /* settingsView.swift */; };
+		B23C2BF22C4001BD00CD2A35 /* SnapeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BF12C4001BD00CD2A35 /* SnapeModel.swift */; };
+		B23C2BF42C40035C00CD2A35 /* SnapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BF32C40035C00CD2A35 /* SnapeView.swift */; };
+		B23C2BF72C40161D00CD2A35 /* TutorialReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BF62C40161D00CD2A35 /* TutorialReviewView.swift */; };
+		B23C2BF92C401C4200CD2A35 /* TutorialPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BF82C401C4200CD2A35 /* TutorialPageView.swift */; };
+		B23C2BFC2C401E1F00CD2A35 /* GameStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BFB2C401E1F00CD2A35 /* GameStatusView.swift */; };
+		B23C2C002C402B4E00CD2A35 /* CauldronStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BFF2C402B4E00CD2A35 /* CauldronStatusView.swift */; };
+		B23C2C032C4030BC00CD2A35 /* SnapeQuotes.json in Resources */ = {isa = PBXBuildFile; fileRef = B23C2C022C4030BC00CD2A35 /* SnapeQuotes.json */; };
+		B23C2C052C4030E300CD2A35 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C2C042C4030E300CD2A35 /* StatusViewModel.swift */; };
+		B2B6591B2C3C250C00682D91 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6591A2C3C250C00682D91 /* SearchBar.swift */; };
+		B2BDD10A2C3D7CA300474C6A /* WikiViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDD1092C3D7CA300474C6A /* WikiViewmodel.swift */; };
+		B2BDD10E2C3DB85100474C6A /* SpellsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDD10D2C3DB85100474C6A /* SpellsModel.swift */; };
+		B2BDD1102C3DB86C00474C6A /* WizardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDD10F2C3DB86C00474C6A /* WizardModel.swift */; };
+		B2C025E02D3AAC850007B27B /* CauldronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C025DD2D3AAC850007B27B /* CauldronView.swift */; };
+		B2C025E12D3AAC850007B27B /* DropZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C025DE2D3AAC850007B27B /* DropZoneView.swift */; };
+		B2C025E22D3AAC850007B27B /* CardIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C025DC2D3AAC850007B27B /* CardIngredientView.swift */; };
+		B2C025E42D3AAD8C0007B27B /* GamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C025E32D3AAD8C0007B27B /* GamePage.swift */; };
+		B2C4E0512C3EA59600065304 /* PotionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C4E0502C3EA59600065304 /* PotionsModel.swift */; };
+		B2C4E0532C3EB52A00065304 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C4E0522C3EB52A00065304 /* CardView.swift */; };
+		CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */; };
+		CE3228082C382DA800F3E8D8 /* WikiPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3228072C382DA800F3E8D8 /* WikiPage.swift */; };
+		CE32280C2C3C099D00F3E8D8 /* WikiPageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32280B2C3C099D00F3E8D8 /* WikiPageFactory.swift */; };
+		CE32280E2C3C0A7400F3E8D8 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32280D2C3C0A7400F3E8D8 /* PrimaryButton.swift */; };
+		CE853AFB2C3C1AFA008CF20B /* TextShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE853AFA2C3C1AFA008CF20B /* TextShimmer.swift */; };
+		CE853AFD2C3C1BD2008CF20B /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE853AFC2C3C1BD2008CF20B /* RoundedImage.swift */; };
+		CE853AFF2C3C1C0B008CF20B /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE853AFE2C3C1C0B008CF20B /* Text+Extension.swift */; };
+		CE853B372C3C1EBE008CF20B /* Cinzel-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B362C3C1EBE008CF20B /* Cinzel-VariableFont_wght.ttf */; };
+		CE853B3B2C3C1ED9008CF20B /* CinzelDecorative-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B382C3C1ED9008CF20B /* CinzelDecorative-Regular.ttf */; };
+		CE853B3C2C3C1ED9008CF20B /* CinzelDecorative-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B392C3C1ED9008CF20B /* CinzelDecorative-Black.ttf */; };
+		CE853B3D2C3C1ED9008CF20B /* CinzelDecorative-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B3A2C3C1ED9008CF20B /* CinzelDecorative-Bold.ttf */; };
+		CE853B462C3C2301008CF20B /* Lora-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B442C3C1F3E008CF20B /* Lora-BoldItalic.ttf */; };
+		CE853B472C3C2301008CF20B /* Lora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B402C3C1F3E008CF20B /* Lora-Regular.ttf */; };
+		CE853B482C3C2301008CF20B /* Lora-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B3E2C3C1F3D008CF20B /* Lora-Bold.ttf */; };
+		CE853B492C3C2301008CF20B /* Lora-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B452C3C1F3E008CF20B /* Lora-SemiBoldItalic.ttf */; };
+		CE853B4A2C3C2301008CF20B /* Lora-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B412C3C1F3E008CF20B /* Lora-Medium.ttf */; };
+		CE853B4B2C3C2301008CF20B /* Lora-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B422C3C1F3E008CF20B /* Lora-Italic.ttf */; };
+		CE853B4C2C3C2301008CF20B /* Lora-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B432C3C1F3E008CF20B /* Lora-MediumItalic.ttf */; };
+		CE853B4D2C3C2301008CF20B /* Lora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE853B3F2C3C1F3E008CF20B /* Lora-SemiBold.ttf */; };
+		CEC321592C36CFFB00941979 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC321582C36CFFB00941979 /* LandingPage.swift */; };
+		CEE89F622C36E603005615B6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89F612C36E603005615B6 /* String+Extension.swift */; };
+		CEE89F652C36E6C1005615B6 /* HouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89F642C36E6C1005615B6 /* HouseModel.swift */; };
+		CEE89F6A2C36F62F005615B6 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89F692C36F62F005615B6 /* View+Extension.swift */; };
+		CEE89F782C36FBE6005615B6 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89F772C36FBE6005615B6 /* Font+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +87,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F23E0142C3D590700EBC68D /* ReviewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPage.swift; sourceTree = "<group>"; };
+		3F23E0172C3D5B8200EBC68D /* ReviewTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTimer.swift; sourceTree = "<group>"; };
+		3F23E0192C3D7F6100EBC68D /* CardPotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPotion.swift; sourceTree = "<group>"; };
+		3F23E01B2C3D7FAC00EBC68D /* CardIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIngredient.swift; sourceTree = "<group>"; };
+		3F5482CE2C40226400DD9020 /* UTType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UTType+Extension.swift"; sourceTree = "<group>"; };
+		3F63E7FF2C3EAA6C00A500BA /* ElixirViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElixirViewModel.swift; sourceTree = "<group>"; };
+		3F7B40BD2C402CFF0063312C /* IngredientsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsContainer.swift; sourceTree = "<group>"; };
+		3FC81FD82C3DB9CE00BF2803 /* Potion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potion.swift; sourceTree = "<group>"; };
+		3FC81FDA2C3DBE0C00BF2803 /* IngredientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModel.swift; sourceTree = "<group>"; };
 		B214ACF12C35740100A362EB /* gameHarry-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gameHarry-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameHarry_APIApp.swift; sourceTree = "<group>"; };
 		B214ACF82C35740200A362EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,10 +105,55 @@
 		B214AD0B2C35740300A362EB /* gameHarry-APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gameHarry-APIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B214AD0F2C35740300A362EB /* gameHarry_APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameHarry_APIUITests.swift; sourceTree = "<group>"; };
 		B214AD112C35740300A362EB /* gameHarry_APIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameHarry_APIUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B214AD1F2C357BE700A362EB /* apiservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiservice.swift; sourceTree = "<group>"; };
+		B214AD1F2C357BE700A362EB /* Apiservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apiservice.swift; sourceTree = "<group>"; };
 		B214AD2F2C35903800A362EB /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 		B214AD332C35931300A362EB /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
-		B214AD352C35987A00A362EB /* settingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsView.swift; sourceTree = "<group>"; };
+		B23C2BEA2C3FF14D00CD2A35 /* CardIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIngredientView.swift; sourceTree = "<group>"; };
+		B23C2BEC2C3FFDF200CD2A35 /* CauldronView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauldronView.swift; sourceTree = "<group>"; };
+		B23C2BF12C4001BD00CD2A35 /* SnapeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapeModel.swift; sourceTree = "<group>"; };
+		B23C2BF32C40035C00CD2A35 /* SnapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapeView.swift; sourceTree = "<group>"; };
+		B23C2BF62C40161D00CD2A35 /* TutorialReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialReviewView.swift; sourceTree = "<group>"; };
+		B23C2BF82C401C4200CD2A35 /* TutorialPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageView.swift; sourceTree = "<group>"; };
+		B23C2BFB2C401E1F00CD2A35 /* GameStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatusView.swift; sourceTree = "<group>"; };
+		B23C2BFD2C401FDF00CD2A35 /* DropZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneView.swift; sourceTree = "<group>"; };
+		B23C2BFF2C402B4E00CD2A35 /* CauldronStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauldronStatusView.swift; sourceTree = "<group>"; };
+		B23C2C022C4030BC00CD2A35 /* SnapeQuotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SnapeQuotes.json; path = ../../../../SnapeQuotes.json; sourceTree = "<group>"; };
+		B23C2C042C4030E300CD2A35 /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
+		B2B6591A2C3C250C00682D91 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		B2BDD1092C3D7CA300474C6A /* WikiViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewmodel.swift; sourceTree = "<group>"; };
+		B2BDD10D2C3DB85100474C6A /* SpellsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsModel.swift; sourceTree = "<group>"; };
+		B2BDD10F2C3DB86C00474C6A /* WizardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardModel.swift; sourceTree = "<group>"; };
+		B2C025DC2D3AAC850007B27B /* CardIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIngredientView.swift; sourceTree = "<group>"; };
+		B2C025DD2D3AAC850007B27B /* CauldronView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauldronView.swift; sourceTree = "<group>"; };
+		B2C025DE2D3AAC850007B27B /* DropZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropZoneView.swift; sourceTree = "<group>"; };
+		B2C025E32D3AAD8C0007B27B /* GamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePage.swift; sourceTree = "<group>"; };
+		B2C4E0502C3EA59600065304 /* PotionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsModel.swift; sourceTree = "<group>"; };
+		B2C4E0522C3EB52A00065304 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewmodel.swift; sourceTree = "<group>"; };
+		CE3228072C382DA800F3E8D8 /* WikiPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiPage.swift; sourceTree = "<group>"; };
+		CE32280B2C3C099D00F3E8D8 /* WikiPageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiPageFactory.swift; sourceTree = "<group>"; };
+		CE32280D2C3C0A7400F3E8D8 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		CE853AFA2C3C1AFA008CF20B /* TextShimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextShimmer.swift; sourceTree = "<group>"; };
+		CE853AFC2C3C1BD2008CF20B /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		CE853AFE2C3C1C0B008CF20B /* Text+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
+		CE853B362C3C1EBE008CF20B /* Cinzel-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cinzel-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		CE853B382C3C1ED9008CF20B /* CinzelDecorative-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Regular.ttf"; sourceTree = "<group>"; };
+		CE853B392C3C1ED9008CF20B /* CinzelDecorative-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Black.ttf"; sourceTree = "<group>"; };
+		CE853B3A2C3C1ED9008CF20B /* CinzelDecorative-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Bold.ttf"; sourceTree = "<group>"; };
+		CE853B3E2C3C1F3D008CF20B /* Lora-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Bold.ttf"; sourceTree = "<group>"; };
+		CE853B3F2C3C1F3E008CF20B /* Lora-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-SemiBold.ttf"; sourceTree = "<group>"; };
+		CE853B402C3C1F3E008CF20B /* Lora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Regular.ttf"; sourceTree = "<group>"; };
+		CE853B412C3C1F3E008CF20B /* Lora-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Medium.ttf"; sourceTree = "<group>"; };
+		CE853B422C3C1F3E008CF20B /* Lora-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Italic.ttf"; sourceTree = "<group>"; };
+		CE853B432C3C1F3E008CF20B /* Lora-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-MediumItalic.ttf"; sourceTree = "<group>"; };
+		CE853B442C3C1F3E008CF20B /* Lora-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CE853B452C3C1F3E008CF20B /* Lora-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		CEC321582C36CFFB00941979 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		CEE89F612C36E603005615B6 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		CEE89F642C36E6C1005615B6 /* HouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseModel.swift; sourceTree = "<group>"; };
+		CEE89F692C36F62F005615B6 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		CEE89F772C36FBE6005615B6 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		CEE89F792C36FE87005615B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,14 +181,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F23E0132C3D58EF00EBC68D /* ReviewPage */ = {
+			isa = PBXGroup;
+			children = (
+				3F23E0162C3D5B4500EBC68D /* Components */,
+				3F23E0142C3D590700EBC68D /* ReviewPage.swift */,
+			);
+			path = ReviewPage;
+			sourceTree = "<group>";
+		};
+		3F23E0162C3D5B4500EBC68D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3F23E0172C3D5B8200EBC68D /* ReviewTimer.swift */,
+				3F23E0192C3D7F6100EBC68D /* CardPotion.swift */,
+				3F23E01B2C3D7FAC00EBC68D /* CardIngredient.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3F5482C92C400C4000DD9020 /* GamePage */ = {
+			isa = PBXGroup;
+			children = (
+				B2C025DF2D3AAC850007B27B /* Components */,
+				B2C025E32D3AAD8C0007B27B /* GamePage.swift */,
+				3F7B40BD2C402CFF0063312C /* IngredientsContainer.swift */,
+			);
+			path = GamePage;
+			sourceTree = "<group>";
+		};
 		B214ACE82C35740100A362EB = {
 			isa = PBXGroup;
 			children = (
-				B214AD1E2C357BD800A362EB /* APIServices */,
 				B214ACF32C35740100A362EB /* gameHarry-API */,
+				B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */,
 				B214AD042C35740300A362EB /* gameHarry-APITests */,
 				B214AD0E2C35740300A362EB /* gameHarry-APIUITests */,
 				B214ACF22C35740100A362EB /* Products */,
+				B2C025D32D3AAB7C0007B27B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +235,14 @@
 		B214ACF32C35740100A362EB /* gameHarry-API */ = {
 			isa = PBXGroup;
 			children = (
-				B214AD2E2C35901F00A362EB /* ViewModels */,
-				B214AD2D2C35901B00A362EB /* Views */,
-				B214ACF82C35740200A362EB /* Assets.xcassets */,
+				CEE89F792C36FE87005615B6 /* Info.plist */,
 				B214ACFA2C35740200A362EB /* Preview Content */,
+				CEC3215A2C36D79200941979 /* Resources */,
+				CEE89F5B2C36E4F4005615B6 /* Utils */,
+				CEE89F662C36E714005615B6 /* Services */,
+				CEE89F632C36E6AF005615B6 /* Models */,
+				B214AD2D2C35901B00A362EB /* Views */,
+				B214AD2E2C35901F00A362EB /* ViewModels */,
 			);
 			path = "gameHarry-API";
 			sourceTree = "<group>";
@@ -134,19 +272,25 @@
 			path = "gameHarry-APIUITests";
 			sourceTree = "<group>";
 		};
-		B214AD1E2C357BD800A362EB /* APIServices */ = {
+		B214AD1E2C357BD800A362EB /* API */ = {
 			isa = PBXGroup;
 			children = (
-				B214AD1F2C357BE700A362EB /* apiservice.swift */,
+				B214AD1F2C357BE700A362EB /* Apiservice.swift */,
 			);
-			path = APIServices;
+			path = API;
 			sourceTree = "<group>";
 		};
 		B214AD2D2C35901B00A362EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B214AD2F2C35903800A362EB /* WelcomePage.swift */,
+				B23C2BF52C40160A00CD2A35 /* Tutorial Review Page */,
+				B23C2BEF2C4000BF00CD2A35 /* Game Status Page */,
+				3F5482C92C400C4000DD9020 /* GamePage */,
+				3F23E0132C3D58EF00EBC68D /* ReviewPage */,
+				CE3228062C382D9100F3E8D8 /* WikiPage */,
+				CEE89F5F2C36E5A4005615B6 /* WelcomePage */,
 				B214AD332C35931300A362EB /* SettingsPage.swift */,
+				CEE89F672C36F550005615B6 /* LandingPage */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,10 +298,216 @@
 		B214AD2E2C35901F00A362EB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B214ACF42C35740100A362EB /* gameHarry_APIApp.swift */,
-				B214AD352C35987A00A362EB /* settingsView.swift */,
+				CE3228042C382D5200F3E8D8 /* HouseViewmodel.swift */,
+				B2BDD1092C3D7CA300474C6A /* WikiViewmodel.swift */,
+				3F63E7FF2C3EAA6C00A500BA /* ElixirViewModel.swift */,
+				B23C2C042C4030E300CD2A35 /* StatusViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B23C2BEF2C4000BF00CD2A35 /* Game Status Page */ = {
+			isa = PBXGroup;
+			children = (
+				B23C2BFB2C401E1F00CD2A35 /* GameStatusView.swift */,
+				B23C2BF02C4000CB00CD2A35 /* Components */,
+			);
+			path = "Game Status Page";
+			sourceTree = "<group>";
+		};
+		B23C2BF02C4000CB00CD2A35 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B23C2BF32C40035C00CD2A35 /* SnapeView.swift */,
+				B23C2BFF2C402B4E00CD2A35 /* CauldronStatusView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B23C2BF52C40160A00CD2A35 /* Tutorial Review Page */ = {
+			isa = PBXGroup;
+			children = (
+				B23C2BF62C40161D00CD2A35 /* TutorialReviewView.swift */,
+				B23C2BF82C401C4200CD2A35 /* TutorialPageView.swift */,
+			);
+			path = "Tutorial Review Page";
+			sourceTree = "<group>";
+		};
+		B23C2C012C4030A900CD2A35 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				B23C2C022C4030BC00CD2A35 /* SnapeQuotes.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		B2C025D32D3AAB7C0007B27B /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				B23C2BEC2C3FFDF200CD2A35 /* CauldronView.swift */,
+				B23C2BEA2C3FF14D00CD2A35 /* CardIngredientView.swift */,
+				B23C2BFD2C401FDF00CD2A35 /* DropZoneView.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		B2C025DF2D3AAC850007B27B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B2C025DC2D3AAC850007B27B /* CardIngredientView.swift */,
+				B2C025DD2D3AAC850007B27B /* CauldronView.swift */,
+				B2C025DE2D3AAC850007B27B /* DropZoneView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CE3228062C382D9100F3E8D8 /* WikiPage */ = {
+			isa = PBXGroup;
+			children = (
+				CE3228072C382DA800F3E8D8 /* WikiPage.swift */,
+				CE3228092C383A0400F3E8D8 /* Components */,
+			);
+			path = WikiPage;
+			sourceTree = "<group>";
+		};
+		CE3228092C383A0400F3E8D8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B2B6591A2C3C250C00682D91 /* SearchBar.swift */,
+				B2C4E0522C3EB52A00065304 /* CardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CE32280A2C3C098A00F3E8D8 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				CE32280B2C3C099D00F3E8D8 /* WikiPageFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		CEC3215A2C36D79200941979 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B23C2C012C4030A900CD2A35 /* json */,
+				CEC3215B2C36D7B400941979 /* fonts */,
+				B214ACF82C35740200A362EB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEC3215B2C36D7B400941979 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CE853B3E2C3C1F3D008CF20B /* Lora-Bold.ttf */,
+				CE853B442C3C1F3E008CF20B /* Lora-BoldItalic.ttf */,
+				CE853B422C3C1F3E008CF20B /* Lora-Italic.ttf */,
+				CE853B412C3C1F3E008CF20B /* Lora-Medium.ttf */,
+				CE853B432C3C1F3E008CF20B /* Lora-MediumItalic.ttf */,
+				CE853B402C3C1F3E008CF20B /* Lora-Regular.ttf */,
+				CE853B3F2C3C1F3E008CF20B /* Lora-SemiBold.ttf */,
+				CE853B452C3C1F3E008CF20B /* Lora-SemiBoldItalic.ttf */,
+				CE853B392C3C1ED9008CF20B /* CinzelDecorative-Black.ttf */,
+				CE853B3A2C3C1ED9008CF20B /* CinzelDecorative-Bold.ttf */,
+				CE853B382C3C1ED9008CF20B /* CinzelDecorative-Regular.ttf */,
+				CE853B362C3C1EBE008CF20B /* Cinzel-VariableFont_wght.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		CEE89F5B2C36E4F4005615B6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CE32280A2C3C098A00F3E8D8 /* Factory */,
+				CEE89F5E2C36E51E005615B6 /* Styles */,
+				CEE89F5D2C36E50E005615B6 /* GeneralComponents */,
+				CEE89F5C2C36E4FC005615B6 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CEE89F5C2C36E4FC005615B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE853AFE2C3C1C0B008CF20B /* Text+Extension.swift */,
+				CEE89F692C36F62F005615B6 /* View+Extension.swift */,
+				CEE89F612C36E603005615B6 /* String+Extension.swift */,
+				CEE89F772C36FBE6005615B6 /* Font+Extension.swift */,
+				3F5482CE2C40226400DD9020 /* UTType+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEE89F5D2C36E50E005615B6 /* GeneralComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GeneralComponents;
+			sourceTree = "<group>";
+		};
+		CEE89F5E2C36E51E005615B6 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				CE32280D2C3C0A7400F3E8D8 /* PrimaryButton.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		CEE89F5F2C36E5A4005615B6 /* WelcomePage */ = {
+			isa = PBXGroup;
+			children = (
+				B214AD2F2C35903800A362EB /* WelcomePage.swift */,
+				CEE89F602C36E5AE005615B6 /* Components */,
+			);
+			path = WelcomePage;
+			sourceTree = "<group>";
+		};
+		CEE89F602C36E5AE005615B6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CEE89F632C36E6AF005615B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEE89F642C36E6C1005615B6 /* HouseModel.swift */,
+				B2BDD10D2C3DB85100474C6A /* SpellsModel.swift */,
+				B2BDD10F2C3DB86C00474C6A /* WizardModel.swift */,
+				B2C4E0502C3EA59600065304 /* PotionsModel.swift */,
+				3FC81FD82C3DB9CE00BF2803 /* Potion.swift */,
+				3FC81FDA2C3DBE0C00BF2803 /* IngredientModel.swift */,
+				B23C2BF12C4001BD00CD2A35 /* SnapeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEE89F662C36E714005615B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B214AD1E2C357BD800A362EB /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CEE89F672C36F550005615B6 /* LandingPage */ = {
+			isa = PBXGroup;
+			children = (
+				CEC321582C36CFFB00941979 /* LandingPage.swift */,
+				CEE89F682C36F55B005615B6 /* Components */,
+			);
+			path = LandingPage;
+			sourceTree = "<group>";
+		};
+		CEE89F682C36F55B005615B6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CE853AFA2C3C1AFA008CF20B /* TextShimmer.swift */,
+				CE853AFC2C3C1BD2008CF20B /* RoundedImage.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +614,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE853B3D2C3C1ED9008CF20B /* CinzelDecorative-Bold.ttf in Resources */,
+				CE853B462C3C2301008CF20B /* Lora-BoldItalic.ttf in Resources */,
+				CE853B472C3C2301008CF20B /* Lora-Regular.ttf in Resources */,
+				CE853B482C3C2301008CF20B /* Lora-Bold.ttf in Resources */,
+				CE853B492C3C2301008CF20B /* Lora-SemiBoldItalic.ttf in Resources */,
+				CE853B4A2C3C2301008CF20B /* Lora-Medium.ttf in Resources */,
+				CE853B4B2C3C2301008CF20B /* Lora-Italic.ttf in Resources */,
+				B23C2C032C4030BC00CD2A35 /* SnapeQuotes.json in Resources */,
+				CE853B4C2C3C2301008CF20B /* Lora-MediumItalic.ttf in Resources */,
+				CE853B4D2C3C2301008CF20B /* Lora-SemiBold.ttf in Resources */,
+				CE853B372C3C1EBE008CF20B /* Cinzel-VariableFont_wght.ttf in Resources */,
 				B214ACFC2C35740200A362EB /* Preview Assets.xcassets in Resources */,
+				CE853B3C2C3C1ED9008CF20B /* CinzelDecorative-Black.ttf in Resources */,
+				CE853B3B2C3C1ED9008CF20B /* CinzelDecorative-Regular.ttf in Resources */,
 				B214ACF92C35740200A362EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,11 +653,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B214AD362C35987A00A362EB /* settingsView.swift in Sources */,
+				B23C2BFC2C401E1F00CD2A35 /* GameStatusView.swift in Sources */,
+				B2BDD10E2C3DB85100474C6A /* SpellsModel.swift in Sources */,
+				CEE89F622C36E603005615B6 /* String+Extension.swift in Sources */,
+				B2BDD10A2C3D7CA300474C6A /* WikiViewmodel.swift in Sources */,
 				B214AD302C35903800A362EB /* WelcomePage.swift in Sources */,
+				3F23E01C2C3D7FAC00EBC68D /* CardIngredient.swift in Sources */,
+				3F23E01A2C3D7F6100EBC68D /* CardPotion.swift in Sources */,
+				CE3228082C382DA800F3E8D8 /* WikiPage.swift in Sources */,
+				3F23E0152C3D590700EBC68D /* ReviewPage.swift in Sources */,
+				CEC321592C36CFFB00941979 /* LandingPage.swift in Sources */,
+				B23C2BF92C401C4200CD2A35 /* TutorialPageView.swift in Sources */,
+				3F23E0182C3D5B8200EBC68D /* ReviewTimer.swift in Sources */,
 				B214ACF52C35740100A362EB /* gameHarry_APIApp.swift in Sources */,
-				B214AD202C357BE700A362EB /* apiservice.swift in Sources */,
+				B23C2C052C4030E300CD2A35 /* StatusViewModel.swift in Sources */,
+				3F63E8002C3EAA6C00A500BA /* ElixirViewModel.swift in Sources */,
+				3FC81FD92C3DB9CE00BF2803 /* Potion.swift in Sources */,
+				CE32280E2C3C0A7400F3E8D8 /* PrimaryButton.swift in Sources */,
+				CE853AFB2C3C1AFA008CF20B /* TextShimmer.swift in Sources */,
+				3FC81FDB2C3DBE0C00BF2803 /* IngredientModel.swift in Sources */,
+				CE32280C2C3C099D00F3E8D8 /* WikiPageFactory.swift in Sources */,
+				B2C4E0512C3EA59600065304 /* PotionsModel.swift in Sources */,
+				B23C2BF72C40161D00CD2A35 /* TutorialReviewView.swift in Sources */,
+				CEE89F6A2C36F62F005615B6 /* View+Extension.swift in Sources */,
+				B23C2C002C402B4E00CD2A35 /* CauldronStatusView.swift in Sources */,
+				B2C025E02D3AAC850007B27B /* CauldronView.swift in Sources */,
+				B2C025E12D3AAC850007B27B /* DropZoneView.swift in Sources */,
+				B2C025E22D3AAC850007B27B /* CardIngredientView.swift in Sources */,
+				B23C2BF22C4001BD00CD2A35 /* SnapeModel.swift in Sources */,
+				CEE89F782C36FBE6005615B6 /* Font+Extension.swift in Sources */,
+				3F7B40BE2C402CFF0063312C /* IngredientsContainer.swift in Sources */,
+				B214AD202C357BE700A362EB /* Apiservice.swift in Sources */,
+				CEE89F652C36E6C1005615B6 /* HouseModel.swift in Sources */,
+				CE853AFF2C3C1C0B008CF20B /* Text+Extension.swift in Sources */,
+				B2BDD1102C3DB86C00474C6A /* WizardModel.swift in Sources */,
+				CE853AFD2C3C1BD2008CF20B /* RoundedImage.swift in Sources */,
 				B214AD342C35931300A362EB /* SettingsPage.swift in Sources */,
+				B2B6591B2C3C250C00682D91 /* SearchBar.swift in Sources */,
+				B23C2BF42C40035C00CD2A35 /* SnapeView.swift in Sources */,
+				B2C025E42D3AAD8C0007B27B /* GamePage.swift in Sources */,
+				B2C4E0532C3EB52A00065304 /* CardView.swift in Sources */,
+				3F5482CF2C40226400DD9020 /* UTType+Extension.swift in Sources */,
+				CE3228052C382D5200F3E8D8 /* HouseViewmodel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,11 +861,13 @@
 				DEVELOPMENT_TEAM = 9C97S2SR7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gameHarry-API/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,11 +892,13 @@
 				DEVELOPMENT_TEAM = 9C97S2SR7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gameHarry-API/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,8 +919,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44U668YQTW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Challenge.gameHarry-APITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,8 +939,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44U668YQTW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Challenge.gameHarry-APITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
